@@ -1,0 +1,11 @@
+E:\Capstone Project\capstone-project\GameServer\GameServer\bin\Debug\netcoreapp3.0\GameServer.exe
+E:\Capstone Project\capstone-project\GameServer\GameServer\bin\Debug\netcoreapp3.0\GameServer.deps.json
+E:\Capstone Project\capstone-project\GameServer\GameServer\bin\Debug\netcoreapp3.0\GameServer.runtimeconfig.json
+E:\Capstone Project\capstone-project\GameServer\GameServer\bin\Debug\netcoreapp3.0\GameServer.runtimeconfig.dev.json
+E:\Capstone Project\capstone-project\GameServer\GameServer\bin\Debug\netcoreapp3.0\GameServer.dll
+E:\Capstone Project\capstone-project\GameServer\GameServer\bin\Debug\netcoreapp3.0\GameServer.pdb
+E:\Capstone Project\capstone-project\GameServer\GameServer\obj\Debug\netcoreapp3.0\GameServer.csprojAssemblyReference.cache
+E:\Capstone Project\capstone-project\GameServer\GameServer\obj\Debug\netcoreapp3.0\GameServer.AssemblyInfoInputs.cache
+E:\Capstone Project\capstone-project\GameServer\GameServer\obj\Debug\netcoreapp3.0\GameServer.AssemblyInfo.cs
+E:\Capstone Project\capstone-project\GameServer\GameServer\obj\Debug\netcoreapp3.0\GameServer.dll
+E:\Capstone Project\capstone-project\GameServer\GameServer\obj\Debug\netcoreapp3.0\GameServer.pdb
