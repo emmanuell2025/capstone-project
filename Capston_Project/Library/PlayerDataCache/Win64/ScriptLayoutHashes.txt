@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-D:/Capstone.exe
+D:/Presentation/Capstone.exe
 SceneListBegin?
 Assets/Scripts/Scenes/MainMenu.unity
 Assets/Scripts/Scenes/level_1.unity
