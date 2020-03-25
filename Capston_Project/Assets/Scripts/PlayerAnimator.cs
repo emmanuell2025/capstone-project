@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerAnimator : CharacterAnimator
 {
     public WeaponAnimations[] weaponAnimations;
@@ -12,10 +13,22 @@ public class PlayerAnimator : CharacterAnimator
         EquipmentManager.instance.onEquipmentchanged += OnEquipmentChanged;
 
         weaponAnimationsDict = new Dictionary<Equipment, AnimationClip[]>();
-        foreach (WeaponAnimations a in weaponAnimations)
+        foreach(WeaponAnimations a in weaponAnimations)
         {
             weaponAnimationsDict.Add(a.weapon, a.clips);
         }
+    }
+
+    protected override void OnAttack()
+    {
+        /*if (currentWeaponAnimation != null)
+        {
+            int attackIndex = Random.Range(0, currentWeaponAnimation.numAnimations);
+            animator.SetFloat("Attack Index", attackIndex);
+            animator.SetFloat("Weapon Index", currentWeaponAnimation.weaponIndex);
+        }
+        base.OnAttack();   
+        */   
     }
 
     void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
@@ -48,6 +61,7 @@ public class PlayerAnimator : CharacterAnimator
     public struct WeaponAnimations
     {
         public Equipment weapon;
+        public int weaponIndex;
         public AnimationClip[] clips;
     }
 }

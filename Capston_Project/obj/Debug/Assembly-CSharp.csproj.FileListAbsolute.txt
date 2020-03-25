@@ -1,0 +1,3 @@
+C:\Users\Jon\Capston_Project\capstone-project\Capston_Project\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Jon\Capston_Project\capstone-project\Capston_Project\obj\Debug\Properties.Resources.resources
+C:\Users\Jon\Capston_Project\capstone-project\Capston_Project\obj\Debug\Assembly-CSharp.csproj.GenerateResource.Cache
