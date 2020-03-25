@@ -6,6 +6,7 @@ using UnityEngine;
 public class CharacterCombat : MonoBehaviour
 {
     public float attackSpeed = 1f;
+
     private float attackCooldown = 0f;
 
     public float attackDelay = .6f;
@@ -36,7 +37,7 @@ public class CharacterCombat : MonoBehaviour
         {
             StartCoroutine(DoDamage(targetStats, attackDelay));
 
-            if (OnAttack != null)
+            if(OnAttack != null)
             {
                 OnAttack();
             }

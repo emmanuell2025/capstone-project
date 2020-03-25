@@ -24,9 +24,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537035756282504138}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.00334434, y: 0.014618099, z: 0.015515118}
-  m_LocalScale: {x: 1, y: 1.062323, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.00334434, y: 0.014618099, z: 0.015515117}
+  m_LocalScale: {x: -100, y: -106.2323, z: -100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,10 +45,11 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100008, guid: fbe460d1247fa934484236707dc30ad3, type: 3}
+  - {fileID: -414921334540547795, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56,10 +57,11 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
+  m_StitchLightmapSeams: 1
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -72,7 +74,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300006, guid: fbe460d1247fa934484236707dc30ad3, type: 3}
+  m_Mesh: {fileID: 3900480760133451625, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
   m_Bones:
   - {fileID: 0}
   - {fileID: 0}
@@ -108,6 +110,6 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0.34331653, z: -0.0017656237}
-    m_Extent: {x: 0.50012034, y: 0.36818638, z: 0.26708513}
+    m_Center: {x: 9.313226e-10, y: 0.0034468253, z: 0.00078074395}
+    m_Extent: {x: 0.0042851726, y: 0.0033446145, z: 0.0020802915}
   m_DirtyAABB: 0
