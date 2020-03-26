@@ -35,6 +35,7 @@ public class PlayerAnimator : CharacterAnimator
     {
         if (newItem != null && newItem.equipSlot == EquipmentSlot.Weapon)
         {
+            //Equipping
             animator.SetLayerWeight(1, 1);
             if (weaponAnimationsDict.ContainsKey(newItem))
             {
@@ -43,6 +44,7 @@ public class PlayerAnimator : CharacterAnimator
         }
         else if (newItem == null && oldItem != null && oldItem.equipSlot == EquipmentSlot.Weapon)
         {
+            //Unequipping
             animator.SetLayerWeight(1, 0);
             currentAttackAnimSet = defaultAttackAnimSet;
         }

@@ -55,23 +55,52 @@ ModelImporter:
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Combat_Idle' has import animation warnings
-      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'Chest' is inbetween humanoid transforms
+      that might lower retargeting quality:\n\t'Chest' is inbetween humanoid transforms
       and has rotation animation that will be discarded.\n\nClip 'Punch_Attack' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Chest' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Armature|Combat_Idle' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Chest'
+      import animation warnings that might lower retargeting quality:\n\t'Chest'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Armature|Punch_Attack' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Chest'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
+      'Armature|Combat_Idle' has import animation warnings that might lower retargeting
+      quality:\n\t'Chest' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\nClip 'Armature|Punch_Attack' has import animation
+      warnings that might lower retargeting quality:\n\t'Chest' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Idle':\n\tRetargeting
+      quality is good. No significant differences with original animation were found.\n\nRetargeting
+      quality report for clip 'Combat_Idle':\n\tRetargeting quality is good. No significant
+      differences with original animation were found.\n\nRetargeting quality report
+      for clip 'Punch_Attack':\n\tRetargeting quality is good. No significant differences
+      with original animation were found.\n\nRetargeting quality report for clip
+      'Right Grip':\n\tRetargeting quality is good. No significant differences with
+      original animation were found.\n\nRetargeting quality report for clip 'Sword_Attack':\n\tLeftFoot
+      average position error 1.8 mm and maximum position error 1.8 mm at time 0:26
+      (43.3%) Frame 26\n\tRightFoot average position error 1.8 mm and maximum position
+      error 1.8 mm at time 0: 1 (1.7%) Frame 1\n\nRetargeting quality report for
+      clip 'Walking':\n\tRetargeting quality is good. No significant differences
+      with original animation were found.\n\nRetargeting quality report for clip
+      'Armature|Combat_Idle':\n\tLeftFoot average position error 1.8 mm and maximum
+      position error 1.8 mm at time 0: 6 (9.8%) Frame 6\n\tRightFoot average position
+      error 1.8 mm and maximum position error 1.8 mm at time 0: 0 (0.0%) Frame 0\n\nRetargeting
+      quality report for clip 'Armature|Idle':\n\tLeftFoot average position error
+      2.0 mm and maximum position error 2.0 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot
+      average position error 2.0 mm and maximum position error 2.0 mm at time 0:15
+      (25.0%) Frame 15\n\nRetargeting quality report for clip 'Armature|Punch_Attack':\n\tLeftFoot
+      average position error 1.8 mm and maximum position error 1.8 mm at time 0:21
+      (34.4%) Frame 21\n\tRightFoot average position error 1.8 mm and maximum position
+      error 1.8 mm at time 0:21 (34.4%) Frame 21\n\nRetargeting quality report for
+      clip 'Armature|Right Grip':\n\tLeftFoot average position error 2.0 mm and maximum
+      position error 2.0 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position
+      error 1.8 mm and maximum position error 1.8 mm at time 0: 1 (100.0%) Frame
+      1\n\nRetargeting quality report for clip 'Armature|Sword_Attack':\n\tLeftFoot
+      average position error 1.8 mm and maximum position error 1.8 mm at time 0:26
+      (43.3%) Frame 26\n\tRightFoot average position error 1.8 mm and maximum position
+      error 1.8 mm at time 0: 1 (1.7%) Frame 1\n\nRetargeting quality report for
+      clip 'Armature|Walking':\n\tLeftFoot average position error 1.8 mm and maximum
+      position error 2.0 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position
+      error 1.8 mm and maximum position error 2.0 mm at time 0:30 (50.0%) Frame 30\n"
+    animationDoRetargetingWarnings: 1
     importAnimatedCustomProperties: 0
-    importConstraints: 0
-    animationCompression: 3
+    importConstraints: 1
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -113,15 +142,15 @@ ModelImporter:
       takeName: Combat_Idle
       internalID: 0
       firstFrame: 0
-      lastFrame: 61
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -141,8 +170,8 @@ ModelImporter:
       name: Punch_Attack
       takeName: Punch_Attack
       internalID: 0
-      firstFrame: 0
-      lastFrame: 61
+      firstFrame: 1
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -941,7 +970,7 @@ ModelImporter:
     feetSpacing: 0
     globalScale: 1
     rootMotionBoneName: 
-    hasTranslationDoF: 0
+    hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
