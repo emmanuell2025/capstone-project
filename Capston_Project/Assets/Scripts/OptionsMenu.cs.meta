@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: dd5cb7ae3715be94fbb6bf495a42956e
+<<<<<<< HEAD:Capston_Project/Assets/Scripts/OptionsMenu.cs.meta
+guid: edc25d35e823f8198b413f1f39a58d7e
+=======
+guid: 7fe1d9999606f6243a026982ca741661
+>>>>>>> live:Capston_Project/Assets/Scripts/PlayerAnimator.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

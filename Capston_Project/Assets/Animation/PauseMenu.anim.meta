@@ -1,6 +1,11 @@
 fileFormatVersion: 2
-guid: 2493664d1f2a9f57f8ef8e51ab4e8cf5
+<<<<<<< HEAD:Capston_Project/Assets/Animation/PauseMenu.anim.meta
+guid: e9ca3cb6efeba86bea8f2a29e0a723ab
 NativeFormatImporter:
+=======
+guid: 9e860bd8bdc2f6e4da0c5562d40cb740
+PrefabImporter:
+>>>>>>> live:Capston_Project/Assets/Items/Meshes/Sword.prefab.meta
   externalObjects: {}
   mainObjectFileID: 7400000
   userData: 
