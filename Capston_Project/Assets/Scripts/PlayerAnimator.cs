@@ -28,7 +28,7 @@ public class PlayerAnimator : CharacterAnimator
             animator.SetFloat("Weapon Index", currentWeaponAnimation.weaponIndex);
         }
         */
-        base.OnAttack();
+        base.OnAttack(); //Not sure why this fixes it, but it does.
 
     }
 
