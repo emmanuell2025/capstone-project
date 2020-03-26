@@ -86,7 +86,7 @@ public class Client : MonoBehaviour
         {
             try
             {
-                if(socket != null)
+                if (socket != null)
                 {
                     stream.BeginWrite(_packet.ToArray(), 0, _packet.Length(), null, null);
                 }
@@ -125,10 +125,10 @@ public class Client : MonoBehaviour
 
             receivedData.SetBytes(_data);
 
-            if(receivedData.UnreadLength() >= 4)
+            if (receivedData.UnreadLength() >= 4)
             {
                 _packetLength = receivedData.ReadInt();
-                if(_packetLength <= 0)
+                if (_packetLength <= 0)
                 {
                     return true;
                 }
@@ -258,5 +258,6 @@ public class Client : MonoBehaviour
             { (int)ServerPackets.playerRotation, ClientHandle.PlayerRotation }
         };
         Debug.Log("Initialized Packets.");
+
     }
 }

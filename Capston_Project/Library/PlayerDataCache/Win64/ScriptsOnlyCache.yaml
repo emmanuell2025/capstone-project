@@ -34,6 +34,7 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -46,9 +47,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
-    Assets/Scripts/Scenes/MainMenu.unity:
+    Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -82,15 +84,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9730}
     - Class: 114
-      Script: {instanceID: 9772}
-    - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 9774}
     - Class: 114
       Script: {instanceID: 9868}
     - Class: 114
-      Script: {instanceID: 9926}
+      Script: {instanceID: 9870}
     - Class: 114
-      Script: {instanceID: 9938}
+      Script: {instanceID: 9928}
+    - Class: 114
+      Script: {instanceID: 9940}
     - Class: 114
       Script: {instanceID: 9970}
     - Class: 114
@@ -153,7 +155,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
-    Assets/Scripts/Scenes/level_1.unity:
+    Assets/Scenes/level_1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -197,9 +199,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9730}
     - Class: 114
-      Script: {instanceID: 9926}
+      Script: {instanceID: 9750}
     - Class: 114
-      Script: {instanceID: 9948}
+      Script: {instanceID: 9928}
     - Class: 114
       Script: {instanceID: 9980}
     - Class: 114
@@ -275,6 +277,12 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: a625027365a73dc7b12cbaae53982126
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -341,12 +349,6 @@ ScriptsOnlyBuild:
     className: NetworkIdentity
   - hash:
       serializedVersion: 2
-      Hash: a625027365a73dc7b12cbaae53982126
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
@@ -393,18 +395,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransform
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1151,6 +1141,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 19
   scenePathNames:
-  - Assets/Scripts/Scenes/MainMenu.unity
-  - Assets/Scripts/Scenes/level_1.unity
-  playerPath: E:/Capstone Project/capstone-project/Capston_Project/Build/Capstone.exe
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/level_1.unity
+  playerPath: E:/Capstone Project/capstone-project/Capston_Project/New folder/Capstone.exe

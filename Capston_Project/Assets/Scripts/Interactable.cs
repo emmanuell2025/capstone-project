@@ -13,7 +13,7 @@ public class Interactable : MonoBehaviour
     public virtual void Interact()
     {
         //stuff
-        Debug.Log("Interaction occured with " + transform.name);
+       // Debug.Log("Interaction occured with " + transform.name);
 
     }
 
