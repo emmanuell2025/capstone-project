@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class CharacterAnimator : MonoBehaviour
 {
-    public AnimationClip replaceableAttackAnim;
+    public AnimationClip replaceableAttackAnim; //For player characters
     public AnimationClip[] defaultAttackAnimSet;
     protected AnimationClip[] currentAttackAnimSet;
 
@@ -35,7 +35,7 @@ public class CharacterAnimator : MonoBehaviour
     {
         float speedPercent = agent.velocity.magnitude / agent.speed;
         animator.SetFloat("speedPercent", speedPercent, locomationAnimationSmoothTime, Time.deltaTime);
-        animator.SetBool("inCombat", combat.inCombat);        
+        animator.SetBool("inCombat", combat.InCombat);        
     }
 
     protected virtual void OnAttack()

@@ -12,7 +12,7 @@ public class CharacterCombat : MonoBehaviour
 
     public float attackDelay = .6f;
 
-    public bool inCombat { get; private set; }
+    public bool InCombat { get; private set; }
 
     public event System.Action OnAttack;
 
@@ -32,7 +32,7 @@ public class CharacterCombat : MonoBehaviour
 
         if (Time.time - lastAttackTime > combatCooldown)
         {
-            inCombat = false;
+            InCombat = false;
         }
 
     }
@@ -50,7 +50,7 @@ public class CharacterCombat : MonoBehaviour
             }
 
             attackCooldown = (1 / attackSpeed);
-            inCombat = true;
+            InCombat = true;
             lastAttackTime = Time.time;
 
         }
@@ -64,7 +64,7 @@ public class CharacterCombat : MonoBehaviour
         stats.TakeDamage(myStats.damage.GetValue());
         if(stats.currentHealth <= 0)
         {
-            inCombat = false;
+            InCombat = false;
         }
 
     }

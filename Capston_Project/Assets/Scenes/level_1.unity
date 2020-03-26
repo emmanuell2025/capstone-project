@@ -515,7 +515,7 @@ MonoBehaviour:
   defaultAttackAnimSet:
   - {fileID: -974551002594328143, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
   weaponAnimations:
-  - weapon: {fileID: 11400000, guid: 484439ddec492cc4daba1526a1304ae6, type: 2}
+  - weapon: {fileID: 11400000, guid: 5228dd374cd9bb54bb1f31cf08e2af54, type: 2}
     weaponIndex: 0
     clips:
     - {fileID: 3204866565866652087, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
@@ -2064,7 +2064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871638768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.4, y: 8.36, z: 26.65}
+  m_LocalPosition: {x: 25.01, y: 8.36, z: 15.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1468352128}

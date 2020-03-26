@@ -27,15 +27,15 @@ public class PlayerAnimator : CharacterAnimator
             animator.SetFloat("Attack Index", attackIndex);
             animator.SetFloat("Weapon Index", currentWeaponAnimation.weaponIndex);
         }
-        base.OnAttack();   
-        */   
+        */
+        base.OnAttack();
+
     }
 
     void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
     {
         if (newItem != null && newItem.equipSlot == EquipmentSlot.Weapon)
         {
-            //Equipping
             animator.SetLayerWeight(1, 1);
             if (weaponAnimationsDict.ContainsKey(newItem))
             {
@@ -44,7 +44,6 @@ public class PlayerAnimator : CharacterAnimator
         }
         else if (newItem == null && oldItem != null && oldItem.equipSlot == EquipmentSlot.Weapon)
         {
-            //Unequipping
             animator.SetLayerWeight(1, 0);
             currentAttackAnimSet = defaultAttackAnimSet;
         }
