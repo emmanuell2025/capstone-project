@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   itemName: Sword
-  icon: {fileID: 21300000, guid: 8df2caad42937074bab20d399846db42, type: 3}
+  icon: {fileID: 21300000, guid: 4be42e61b1b0616428c83c149d7355cc, type: 3}
   isDefaultItem: 0
   equipSlot: 3
   mesh: {fileID: 137182823541378766, guid: 9e860bd8bdc2f6e4da0c5562d40cb740, type: 3}
