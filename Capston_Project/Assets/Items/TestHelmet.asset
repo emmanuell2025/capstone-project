@@ -15,6 +15,8 @@ MonoBehaviour:
   itemName: Helmet
   icon: {fileID: 21300000, guid: 3f1a4f072b63b144c94a28c73715d016, type: 3}
   isDefaultItem: 0
+  itemPickup: {fileID: 4385253972621937071, guid: 8cba478b2fe467f4685ea73b04a62fde,
+    type: 3}
   equipSlot: 0
   mesh: {fileID: 137771535289312678, guid: 710906d4ed9bfb14f91e16431ae99a04, type: 3}
   coveredMeshRegions: 

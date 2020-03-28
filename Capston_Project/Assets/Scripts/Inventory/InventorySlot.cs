@@ -28,6 +28,10 @@ public class InventorySlot : MonoBehaviour
 
     public void OnRemoveButton()
     {
+        if(item.itemPickup != null)
+        {            
+            Instantiate(item.itemPickup);
+        }        
         Inventory.instance.Remove(item);
     }
 
