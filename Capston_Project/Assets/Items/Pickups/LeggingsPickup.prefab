@@ -1,5 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!33 &5575450217524314626
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420518944755893349}
+  m_Mesh: {fileID: 1301731239863679414, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
 --- !u!1 &5575450216593063954
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,8 +33,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5575450216593063954}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.556, y: 6.918, z: 5.646}
+  m_LocalRotation: {x: -0, y: 0.5858783, z: -0, w: -0.81039906}
+  m_LocalPosition: {x: 17.526924, y: 6.909828, z: 5.915652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1420518944755996677}
@@ -61,14 +69,6 @@ MonoBehaviour:
   radius: 0.5
   interactionTransform: {fileID: 5575450216593063959}
   item: {fileID: 11400000, guid: 75d6547186ccf8340a1b100132e855ba, type: 2}
---- !u!33 &5575450217524314626
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1420518944755893349}
-  m_Mesh: {fileID: 1301731239863679414, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
 --- !u!1001 &5575450217749999137
 PrefabInstance:
   m_ObjectHideFlags: 0

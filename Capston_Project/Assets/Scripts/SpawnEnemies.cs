@@ -17,7 +17,7 @@ public class SpawnEnemies : MonoBehaviour
     int xMinimum = 15;
     int xMaximum = 35;
     int yMinimum = 4;
-    int yMaximum = 16;
+    int yMaximum = 8;
     int zMinimum = 15;
     int zMaximum = 35;
 
