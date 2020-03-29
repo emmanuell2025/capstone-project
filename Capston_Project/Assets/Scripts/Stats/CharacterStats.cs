@@ -42,4 +42,16 @@ public class CharacterStats : MonoBehaviour
         //Overwritable.
         Debug.Log(transform.name + " died.");
     }
+
+    public void Heal(int amount)
+    {
+        if(currentHealth != maxHealth)
+        {
+            currentHealth += amount;
+            if(currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+        }
+    }
 }
