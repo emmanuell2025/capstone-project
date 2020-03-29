@@ -16,6 +16,5 @@ public class Consumables : Item
         playersHealth.Heal(healAmount); // Heal the player        
         playersHealth.TakeDamage(ZERO);//This is here only to update the HealthBar.
 
-
     }
 }

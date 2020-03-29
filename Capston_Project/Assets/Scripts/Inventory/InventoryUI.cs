@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+
 public class InventoryUI : MonoBehaviour
 {
     //inventorySlots are children of the items parent object.
@@ -9,15 +10,15 @@ public class InventoryUI : MonoBehaviour
     Inventory inventory;
 
     InventorySlot[] slots;
-    
+
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         inventory = Inventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -26,13 +27,12 @@ public class InventoryUI : MonoBehaviour
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }
     }
-
-    void UpdateUI ()
+    void UpdateUI()
     {
         Debug.Log("Updating UI");
         for (int i = 0; i < slots.Length; i++)
         {
-            if(i < inventory.items.Count)
+            if (i < inventory.items.Count)
             {
                 slots[i].AddItem(inventory.items[i]);
             }
@@ -40,8 +40,6 @@ public class InventoryUI : MonoBehaviour
             {
                 slots[i].ClearSlot();
             }
-
         }
-       
     }
 }

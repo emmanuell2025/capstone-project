@@ -10,6 +10,7 @@ public class InventorySlot : MonoBehaviour
 
     Item item;
 
+
     public void AddItem (Item newItem)
     {
         item = newItem;
