@@ -6,18 +6,16 @@ using UnityEngine;
 public class Consumables : Item 
 {
     public int healAmount = 0;
-    
+    public const int ZERO = 0;
     public override void Use()
     {
         base.Use();
         Debug.Log(name + " has been consumed.");
         GameObject player = GameObject.Find("Player");
         CharacterStats playersHealth = player.GetComponent<CharacterStats>();        
-        playersHealth.Heal(healAmount); // Heal the player
-        /*
-        HealthUI healthBar = player.GetComponent<HealthUI>();
-        healthBar.HealthUI.OnHealthChanged(playersHealth.currentHealth, playersHealth.maxHealth);
-        */
-    }
+        playersHealth.Heal(healAmount); // Heal the player        
+        playersHealth.TakeDamage(ZERO);//This is here only to update the HealthBar.
 
+
+    }
 }

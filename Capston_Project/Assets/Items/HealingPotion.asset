@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e048b284d24fbf34c9e57a8df07ef8b7, type: 3}
   m_Name: HealingPotion
   m_EditorClassIdentifier: 
-  itemName: New Item
-  icon: {fileID: 0}
+  itemName: Health Potion
+  icon: {fileID: 21300000, guid: 63e6f1e26a78a9a48be7fb0fdd5e3a29, type: 3}
   isDefaultItem: 0
-  itemPickup: {fileID: 0}
+  itemPickup: {fileID: 181844357800373347, guid: a13b7dde2f95cde48a3095cb13df9b61,
+    type: 3}
+  healAmount: 10
