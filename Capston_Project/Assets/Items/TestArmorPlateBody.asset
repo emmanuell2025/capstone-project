@@ -15,8 +15,10 @@ MonoBehaviour:
   itemName: TestEqup1
   icon: {fileID: 21300000, guid: 80df1406307694a478b78cdea5675a46, type: 3}
   isDefaultItem: 0
+  itemPickup: {fileID: 1775977820549378174, guid: 34834c4d8435991499b11365fcdab6a9,
+    type: 3}
   equipSlot: 1
-  mesh: {fileID: 7960964718714285363, guid: 0e305900755920c4fb3fc6484308f21b, type: 3}
+  mesh: {fileID: 962119047076101631, guid: 0e305900755920c4fb3fc6484308f21b, type: 3}
   coveredMeshRegions: 02000000
   armorModifier: 3
   damageModifier: 0
