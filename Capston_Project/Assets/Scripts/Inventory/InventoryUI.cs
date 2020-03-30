@@ -5,6 +5,7 @@ public class InventoryUI : MonoBehaviour
     //inventorySlots are children of the items parent object.
     public Transform itemsParent;
     public GameObject inventoryUI;
+    public GameObject inventoryUI2;
 
     Inventory inventory;
 
@@ -24,6 +25,7 @@ public class InventoryUI : MonoBehaviour
         if (Input.GetButtonDown("Inventory"))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
+            inventoryUI2.SetActive(!inventoryUI2.activeSelf);
         }
     }
 

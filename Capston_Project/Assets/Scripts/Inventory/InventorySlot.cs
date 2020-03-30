@@ -5,6 +5,7 @@ public class InventorySlot : MonoBehaviour
 {
     public Image icon;
     public Button removeButton;
+    
 
     Item item;
 
@@ -29,6 +30,7 @@ public class InventorySlot : MonoBehaviour
     public void OnRemoveButton()
     {
         Inventory.instance.Remove(item);
+
     }
 
     public void UseItem()
@@ -36,6 +38,8 @@ public class InventorySlot : MonoBehaviour
         if (item != null)
         {
             item.Use();
+        
         }
     }
+   
 }
