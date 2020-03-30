@@ -8,7 +8,7 @@ public class InventorySlot : MonoBehaviour
     public GameObject player;
     public GameObject pickUp;
 
-    Item item;
+    public Item item;
 
 
     public void AddItem (Item newItem)

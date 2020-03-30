@@ -17,4 +17,4 @@ MonoBehaviour:
   isDefaultItem: 0
   itemPickup: {fileID: 181844357800373347, guid: a13b7dde2f95cde48a3095cb13df9b61,
     type: 3}
-  healAmount: 10
+  healAmount: 25
