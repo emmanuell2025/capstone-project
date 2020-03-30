@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     #region
 
     public static PlayerManager instance;
+    public GameObject gameOverUI;
 
     void Awake()
     {
@@ -23,7 +24,9 @@ public class PlayerManager : MonoBehaviour
 
     public void KillPlayer()
     {
+      gameOverUI.SetActive(true);
+      Time.timeScale=0f;
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
