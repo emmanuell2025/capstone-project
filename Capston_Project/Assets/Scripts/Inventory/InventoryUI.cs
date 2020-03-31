@@ -26,6 +26,14 @@ public class InventoryUI : MonoBehaviour
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if ((slots[i].mouseIsOver == true) && (slots[i].item != null))
+            {
+                Debug.Log("Mouse is over " + slots[i].item.itemName + ".");
+            }
+        }     
     }
     void UpdateUI()
     {
@@ -39,9 +47,7 @@ public class InventoryUI : MonoBehaviour
             else
             {
                 slots[i].ClearSlot();
-            }
+            }       
         }
     }
-
-
 }
