@@ -14,8 +14,9 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public Button removeButton;
     public GameObject player;
     public GameObject pickUp;
-    public bool mouseIsOver = false;
+    public bool mouseIsOver = false;//Is the cursor over the inventory slot?
     public Item item;
+       
 
         
     public void AddItem (Item newItem)
@@ -54,34 +55,22 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             item.Use();
         }
     }
-
-    public void GetItemDescription()
-    {
-        if ((item != null) && (item.itemDescription != null))
-        {
-            item.PrintDescription();
-        }
-    }
-
-    //Update(), OnPointerEnter, and OnPointerExit is
-    //used for detection if mouse cursor is over 
-    //inventory slot.
-   /* private void LateUpdate()
-    {
-        if ((mouseIsOver == true) && (item != null) )
-        {
-            Debug.Log("Mouse is over " + item.itemName +".");
-        }
-  */
     public void OnPointerEnter(PointerEventData eventData)
     {
         mouseIsOver = true;
         //Debug.Log("Mouse is now over Inventory Slot.");
+        if(item != null)
+        {
+            Inventory.instance.itemNameText.text = item.itemName;
+            Inventory.instance.itemDescriptionText.text = item.GetItemDescription();
+            Inventory.instance.itemDescriptionPanel.SetActive(true);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         mouseIsOver = false;
+        Inventory.instance.itemDescriptionPanel.SetActive(false);
         //Debug.Log("Mouse is no longer over Inventory Slot.");
     }
 }

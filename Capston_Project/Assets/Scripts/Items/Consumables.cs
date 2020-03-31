@@ -19,4 +19,15 @@ public class Consumables : Item
         playersHealth.TakeDamage(ZERO);//This is here only to update the HealthBar.
         RemoveFromInventory();
     }
+
+    public override string GetItemDescription()
+    {
+        string description = "";
+        if(healAmount > 0)
+        {
+            description = description + "Heals " + healAmount +" health points.";            
+        }
+
+        return description;
+    }
 }

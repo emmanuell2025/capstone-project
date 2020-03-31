@@ -8,19 +8,21 @@ public class Item : ScriptableObject {
     public bool isDefaultItem = false;
     public string itemDescription;
     public GameObject itemPickup;
-        
+
     public virtual void Use()
     {
         Debug.Log("Using " + name);
-        
     }
-    public void RemoveFromInventory() {
-
+    public void RemoveFromInventory()
+    {
         Inventory.instance.Remove(this);
     }
-
-    public void PrintDescription()
+    public string GetName()
     {
-        Debug.Log("This is the item description.");
+        return itemName;
+    }
+    public virtual string GetItemDescription()
+    {
+        return itemDescription;
     }
 }

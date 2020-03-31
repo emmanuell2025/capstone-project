@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32092e54f6cf58242b4aaf3167ee3bab, type: 3}
   m_Name: TestArmorLeggings
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Armor Legging
   icon: {fileID: 21300000, guid: c7bccda11b3972b4eb81a83e8afe81be, type: 3}
   isDefaultItem: 0
+  itemDescription: 
   itemPickup: {fileID: 5575450216593063954, guid: dc041a2943dd7df4a8c8188f94ca4dad,
     type: 3}
   equipSlot: 2

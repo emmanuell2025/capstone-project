@@ -11,7 +11,7 @@ public class Equipment : Item
     
 
     public int armorModifier;
-    public int damageModifier;
+    public int damageModifier;      
 
     public override void Use()
     {
@@ -20,6 +20,20 @@ public class Equipment : Item
 
         RemoveFromInventory();
 
+    }
+
+    public override string GetItemDescription()
+    {
+        string description = "";
+        if (damageModifier > 0)
+        {
+            description = description + "Boosts Attack by " + damageModifier + " points.\n";            
+        }
+        if (armorModifier > 0)
+        {
+            description = description + "Boosts Defense by " +armorModifier + " points.\n";
+        }
+        return description;
     }
 }
 

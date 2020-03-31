@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
@@ -26,6 +27,10 @@ public class Inventory : MonoBehaviour {
     public OnItemChanged onItemChangedCallback;
 
     public int space = 20;
+
+    public GameObject itemDescriptionPanel;
+    public Text itemNameText;
+    public Text itemDescriptionText;
 
     public List<Item> items = new List<Item>();
 
