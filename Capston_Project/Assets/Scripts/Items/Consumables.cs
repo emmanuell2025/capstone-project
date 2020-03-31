@@ -8,6 +8,7 @@ public class Consumables : Item
 
     public int healAmount = 0;
     public const int ZERO = 0;
+   
     public override void Use()
     {
         base.Use();

@@ -6,6 +6,7 @@ public class Item : ScriptableObject {
     public string itemName = "New Item";
     public Sprite icon = null;
     public bool isDefaultItem = false;
+    public string itemDescription;
     public GameObject itemPickup;
         
     public virtual void Use()
@@ -16,5 +17,10 @@ public class Item : ScriptableObject {
     public void RemoveFromInventory() {
 
         Inventory.instance.Remove(this);
+    }
+
+    public void PrintDescription()
+    {
+        Debug.Log("This is the item description.");
     }
 }
