@@ -16,7 +16,7 @@ public class Consumables : Item
         GameObject player = GameObject.Find("Player");
         CharacterStats playersHealth = player.GetComponent<CharacterStats>();        
         playersHealth.Heal(healAmount); // Heal the player        
-        playersHealth.TakeDamage(ZERO);//This is here only to update the HealthBar.
+        playersHealth.DetermineIfHealthChanged();
         RemoveFromInventory();
     }
 

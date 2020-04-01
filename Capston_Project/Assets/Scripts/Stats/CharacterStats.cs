@@ -3,10 +3,14 @@
 public class CharacterStats : MonoBehaviour
 {
     public int maxHealth = 100;
+    public int maxMana = 100;
     public int currentHealth { get; private set; }
+    public int currentMana { get; private set; }
 
     public Stat damage;
     public Stat armor;
+    public Stat attackCooldown;
+    public Stat attackSpeed;
 
     public event System.Action<int, int> OnHealthChanged;
 
@@ -20,19 +24,28 @@ public class CharacterStats : MonoBehaviour
     public void TakeDamage(int damage)
     {
         damage -= armor.GetValue();
+        if (damage < 1)
+        {
+            damage = 1;
+        }
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
         currentHealth -= damage;
         Debug.Log(transform.name + " takes " + damage + " damage. ");
 
-        if(OnHealthChanged != null)
-        {
-            OnHealthChanged(maxHealth, currentHealth);
-        }
+        DetermineIfHealthChanged();
 
         if (currentHealth <= 0)
         {
             Die();
+        }
+    }
+
+    public void DetermineIfHealthChanged() //Used for updating HealthBars.
+    {
+        if (OnHealthChanged != null)
+        {
+            OnHealthChanged(maxHealth, currentHealth);
         }
     }
 
@@ -53,5 +66,6 @@ public class CharacterStats : MonoBehaviour
                 currentHealth = maxHealth;
             }
         }
+        DetermineIfHealthChanged();
     }
 }
