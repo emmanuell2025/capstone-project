@@ -16,6 +16,11 @@ public class CharacterCombat : MonoBehaviour
 
     public event System.Action OnAttack;
 
+    /*
+     * I think this class needs to be "cleaned" up. I feel like its
+     * far more complicated than it needs to be.
+    */
+
 
 
 

@@ -9,6 +9,8 @@ public class CharacterStats : MonoBehaviour
 
     public Stat damage;
     public Stat armor;
+    public Stat magicAttack;
+    public Stat magicDefense;
     public Stat attackCooldown;
     public Stat attackSpeed;
 

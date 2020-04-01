@@ -7,7 +7,6 @@ public class Consumables : Item
 {  
 
     public int healAmount = 0;
-    public const int ZERO = 0;
    
     public override void Use()
     {
@@ -16,8 +15,8 @@ public class Consumables : Item
         GameObject player = GameObject.Find("Player");
         CharacterStats playersHealth = player.GetComponent<CharacterStats>();        
         playersHealth.Heal(healAmount); // Heal the player        
-        playersHealth.DetermineIfHealthChanged();
-        RemoveFromInventory();
+        playersHealth.DetermineIfHealthChanged();//Update HealthBar
+        RemoveFromInventory(); //Item was used, so it no longer exists.
     }
 
     public override string GetItemDescription()
