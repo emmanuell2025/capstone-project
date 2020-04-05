@@ -4,23 +4,23 @@
 public class InventoryUI : MonoBehaviour
 {
     //inventorySlots are children of the items parent object.
-    public Transform itemsParent;    
-    public GameObject inventoryUI;    
+    public Transform itemsParent;
+    public GameObject inventoryUI;
     public bool shouldDisplayDescription;
 
 
     Inventory inventory;
 
     InventorySlot[] slots;
-        
+
     // Start is called before the first frame update
     void Start()
     {
         inventory = Inventory.instance;
-        inventory.onItemChangedCallback += UpdateUI;        
+        inventory.onItemChangedCallback += UpdateUI;
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
-        
+
     }
     //if ((slots[i].mouseIsOver == true) && (slots[i].item != null))
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class InventoryUI : MonoBehaviour
         if (Input.GetButtonDown("Inventory"))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
-        }                
+        }
     }
 
     void UpdateUI()

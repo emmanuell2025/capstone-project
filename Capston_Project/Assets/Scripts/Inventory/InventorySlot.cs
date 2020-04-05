@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-/* 
+/*
    Dont use OnMouseOver for UI elements,
    use IPointerEnterHandler, which requires
    UnityEngine.EventSystems, IPointerEnterHandler,
@@ -16,9 +16,9 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public GameObject pickUp;
     public bool mouseIsOver = false;//Is the cursor over the inventory slot?
     public Item item;
-       
 
-        
+
+
     public void AddItem (Item newItem)
     {
         item = newItem;
@@ -44,8 +44,9 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             player = GameObject.Find("Player");
             pickUp = item.itemPickup;
             Instantiate(pickUp, new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z), Quaternion.identity);
-        }        
+        }
         Inventory.instance.Remove(item);
+
     }
 
     public void UseItem()
@@ -53,6 +54,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (item != null)
         {
             item.Use();
+
         }
     }
     public void OnPointerEnter(PointerEventData eventData)
@@ -74,5 +76,3 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         //Debug.Log("Mouse is no longer over Inventory Slot.");
     }
 }
-       
-
