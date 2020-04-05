@@ -68,3 +68,7 @@
 # Temporary auto-generated Android Assets
 /Capston_Project/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /Capston_Project/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+#UnityYamlMerge Temporary Files
+*.orig
+*.orig.meta
