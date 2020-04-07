@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DungeonCreator : MonoBehaviour
 {
@@ -21,10 +22,12 @@ public class DungeonCreator : MonoBehaviour
     List<Vector3Int> possibleDoorHorizontalPosition;
     List<Vector3Int> possibleWallHorizontalPosition;
     List<Vector3Int> possibleWallVerticalPosition;
+    public NavMeshSurface surface;
     // Start is called before the first frame update
     void Start()
     {
         CreateDungeon();
+        surface.BuildNavMesh();
     }
 
     public void CreateDungeon()
