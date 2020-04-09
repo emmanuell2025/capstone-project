@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DungeonCreator : MonoBehaviour
 {
@@ -21,10 +22,14 @@ public class DungeonCreator : MonoBehaviour
     List<Vector3Int> possibleDoorHorizontalPosition;
     List<Vector3Int> possibleWallHorizontalPosition;
     List<Vector3Int> possibleWallVerticalPosition;
+    public NavMeshSurface surface;
     // Start is called before the first frame update
     void Start()
     {
+
         CreateDungeon();
+        surface.BuildNavMesh();
+
     }
 
     public void CreateDungeon()
@@ -47,8 +52,10 @@ public class DungeonCreator : MonoBehaviour
         for (int i = 0; i < listOfRooms.Count; i++)
         {
             CreateMesh(listOfRooms[i].BottomLeftAreaCorner, listOfRooms[i].TopRightAreaCorner);
+            
         }
         CreateWalls(wallParent);
+        
     }
 
     private void CreateWalls(GameObject wallParent)
@@ -102,6 +109,7 @@ public class DungeonCreator : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uvs;
         mesh.triangles = triangles;
+        
 
         GameObject dungeonFloor = new GameObject("Mesh" + bottomLeftCorner, typeof(MeshFilter), typeof(MeshRenderer));
 
@@ -110,6 +118,11 @@ public class DungeonCreator : MonoBehaviour
         dungeonFloor.GetComponent<MeshFilter>().mesh = mesh;
         dungeonFloor.GetComponent<MeshRenderer>().material = material;
         dungeonFloor.transform.parent = transform;
+
+        /************ Jon added while trying to Troubleshoot**********/
+        dungeonFloor.isStatic = true;
+        dungeonFloor.AddComponent<MeshCollider>();
+        /*************************************************************/
 
         for (int row = (int)bottomLeftV.x; row < (int)bottomRightV.x; row++)
         {
@@ -131,6 +144,8 @@ public class DungeonCreator : MonoBehaviour
             var wallPosition = new Vector3(bottomRightV.x, 0, col);
             AddWallPositionToList(wallPosition, possibleWallVerticalPosition, possibleDoorVerticalPosition);
         }
+
+        
     }
 
     private void AddWallPositionToList(Vector3 wallPosition, List<Vector3Int> wallList, List<Vector3Int> doorList)
