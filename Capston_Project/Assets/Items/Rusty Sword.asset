@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32092e54f6cf58242b4aaf3167ee3bab, type: 3}
   m_Name: Rusty Sword
   m_EditorClassIdentifier: 
-  itemName: Rust Sword
-  icon: {fileID: 0}
+  itemName: Rusty Sword
+  icon: {fileID: 21300000, guid: ea4be12172d0fd148bd98b20bdbe05fe, type: 3}
   isDefaultItem: 0
   itemDescription: 
   itemPickup: {fileID: 3801689167402891757, guid: 4e7bfebe58201cb488e7c199f03a8324,
     type: 3}
-  equipSlot: 0
+  equipSlot: 3
   mesh: {fileID: 137182823541378766, guid: a42309f057c7e774485be5a302dafec7, type: 3}
   coveredMeshRegions: 
   armorModifier: 0
-  damageModifier: 5
-  theMaterial: {fileID: 0}
+  damageModifier: 3

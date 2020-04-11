@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 1
   interactionTransform: {fileID: 4533123535060611300}
-  item: {fileID: 11400000, guid: 099244f2d1d2eff45bb3fc57606e67df, type: 2}
+  item: {fileID: 11400000, guid: 5228dd374cd9bb54bb1f31cf08e2af54, type: 2}
 --- !u!1001 &4533123534783024565
 PrefabInstance:
   m_ObjectHideFlags: 0
