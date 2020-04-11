@@ -23,6 +23,8 @@ public class EquipmentManager : MonoBehaviour
 
     Inventory inventory;
 
+    
+
     void Start() {
         inventory = Inventory.instance;
         int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;

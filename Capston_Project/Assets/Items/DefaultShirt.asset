@@ -15,8 +15,12 @@ MonoBehaviour:
   itemName: DefaultShirt
   icon: {fileID: 0}
   isDefaultItem: 1
+  itemDescription: 
+  itemPickup: {fileID: 0}
   equipSlot: 1
   mesh: {fileID: 1537035756287717050, guid: dd565e70df89db24c81529792e7dbbc8, type: 3}
   coveredMeshRegions: 0100000002000000
   armorModifier: 0
   damageModifier: 0
+  theMaterial: {fileID: -414921334540547795, guid: 68b4cd2cdfe8a024482dd3e367ad51cf,
+    type: 3}
