@@ -17,12 +17,13 @@ public class DungeonCreator : MonoBehaviour
     public float roomTopCornerMidifier;
     [Range(0, 2)]
     public int roomOffset;
-    public GameObject wallVertical, wallHorizontal;
+    public GameObject wallVertical, wallHorizontal, wallHorizontalTorch, wallVerticalTorch;
     List<Vector3Int> possibleDoorVerticalPosition;
     List<Vector3Int> possibleDoorHorizontalPosition;
     List<Vector3Int> possibleWallHorizontalPosition;
     List<Vector3Int> possibleWallVerticalPosition;
     public NavMeshSurface surface;
+    public int torchCounter = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,27 +53,36 @@ public class DungeonCreator : MonoBehaviour
         for (int i = 0; i < listOfRooms.Count; i++)
         {
             CreateMesh(listOfRooms[i].BottomLeftAreaCorner, listOfRooms[i].TopRightAreaCorner);
-            
+
         }
         CreateWalls(wallParent);
-        
+
     }
 
     private void CreateWalls(GameObject wallParent)
     {
         foreach (var wallPosition in possibleWallHorizontalPosition)
         {
-            CreateWall(wallParent, wallPosition, wallHorizontal);
+            CreateWall(wallParent, wallPosition, wallHorizontal, wallHorizontalTorch);
         }
         foreach (var wallPosition in possibleWallVerticalPosition)
         {
-            CreateWall(wallParent, wallPosition, wallVertical);
+            CreateWall(wallParent, wallPosition, wallVertical, wallVerticalTorch);
         }
     }
 
-    private void CreateWall(GameObject wallParent, Vector3Int wallPosition, GameObject wallPrefab)
+    private void CreateWall(GameObject wallParent, Vector3Int wallPosition, GameObject wallPrefab, GameObject wallTorchPrefab)
     {
-        Instantiate(wallPrefab, wallPosition, Quaternion.identity, wallParent.transform);
+        if (torchCounter == 15)
+        {
+            Instantiate(wallTorchPrefab, wallPosition, Quaternion.identity, wallParent.transform);
+            torchCounter = 0;
+        }
+        else
+        {
+            Instantiate(wallPrefab, wallPosition, Quaternion.identity, wallParent.transform);
+            torchCounter++;
+        }
     }
 
     private void CreateMesh(Vector2 bottomLeftCorner, Vector2 topRightCorner)
@@ -109,7 +119,7 @@ public class DungeonCreator : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uvs;
         mesh.triangles = triangles;
-        
+
 
         GameObject dungeonFloor = new GameObject("Mesh" + bottomLeftCorner, typeof(MeshFilter), typeof(MeshRenderer));
 
@@ -145,13 +155,14 @@ public class DungeonCreator : MonoBehaviour
             AddWallPositionToList(wallPosition, possibleWallVerticalPosition, possibleDoorVerticalPosition);
         }
 
-        
+
     }
 
     private void AddWallPositionToList(Vector3 wallPosition, List<Vector3Int> wallList, List<Vector3Int> doorList)
     {
         Vector3Int point = Vector3Int.CeilToInt(wallPosition);
-        if (wallList.Contains(point)){
+        if (wallList.Contains(point))
+        {
             doorList.Add(point);
             wallList.Remove(point);
         }
@@ -163,9 +174,9 @@ public class DungeonCreator : MonoBehaviour
 
     private void DestroyAllChildren()
     {
-        while(transform.childCount != 0)
+        while (transform.childCount != 0)
         {
-            foreach(Transform item in transform)
+            foreach (Transform item in transform)
             {
                 DestroyImmediate(item.gameObject);
             }
