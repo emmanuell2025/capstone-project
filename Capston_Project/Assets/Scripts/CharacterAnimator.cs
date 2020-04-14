@@ -9,6 +9,9 @@ public class CharacterAnimator : MonoBehaviour
     public AnimationClip[] defaultAttackAnimSet;
     protected AnimationClip[] currentAttackAnimSet;
 
+    //Audio Stuff
+    public AudioClip attackSound;
+
     const float locomationAnimationSmoothTime = .1f;
 
     NavMeshAgent agent;
@@ -47,5 +50,6 @@ public class CharacterAnimator : MonoBehaviour
         animator.SetTrigger("attack");
         int attackIndex = Random.Range(0, currentAttackAnimSet.Length);
         overrideController[replaceableAttackAnim.name] = currentAttackAnimSet[attackIndex];
+
     }
 }
