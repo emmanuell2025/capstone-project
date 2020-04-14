@@ -16,6 +16,7 @@ public class CharacterStats : MonoBehaviour
 
     public event System.Action<int, int> OnHealthChanged;
 
+
     void Awake()
     {
         currentHealth = maxHealth;
@@ -28,7 +29,7 @@ public class CharacterStats : MonoBehaviour
         damage -= armor.GetValue();
         if (damage < 1)
         {
-            damage = 1;
+            damage = 1; //Need to make this a 50/50 chance of 1 or 0 damage.
         }
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
@@ -37,10 +38,14 @@ public class CharacterStats : MonoBehaviour
 
         DetermineIfHealthChanged();
 
+        FindObjectOfType<AudioManager>().Play("PlayerTakeDamage");
+
+        Debug.Log("Audio sound should play.");
+
         if (currentHealth <= 0)
         {
             Die();
-        }
+        }        
     }
 
     public void DetermineIfHealthChanged() //Used for updating HealthBars.
@@ -69,5 +74,10 @@ public class CharacterStats : MonoBehaviour
             }
         }
         DetermineIfHealthChanged();
+    }
+
+    public virtual void PlayCharacterHurtSound()
+    {
+
     }
 }
