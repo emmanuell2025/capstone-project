@@ -62,7 +62,7 @@ public class CharacterCombat : MonoBehaviour
 
     }
     
-
+    
     public void AttackHit_AnimationEvent()
     {
         opponentStats.TakeDamage(myStats.damage.GetValue());

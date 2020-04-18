@@ -9,12 +9,10 @@ public class CharacterStats : MonoBehaviour
 
     public Stat damage;
     public Stat armor;
-    public Stat magicAttack;
-    public Stat magicDefense;
     public Stat attackCooldown;
     public Stat attackSpeed;
 
-    public event System.Action<int, int> OnHealthChanged;
+   public event System.Action<int, int> OnHealthChanged;
 
     void Awake()
     {
@@ -35,7 +33,7 @@ public class CharacterStats : MonoBehaviour
         currentHealth -= damage;
         Debug.Log(transform.name + " takes " + damage + " damage. ");
 
-        DetermineIfHealthChanged();
+       DetermineIfHealthChanged();
 
         if (currentHealth <= 0)
         {
