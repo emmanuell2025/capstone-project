@@ -17,12 +17,12 @@ public class TriggerAnimation : MonoBehaviour
 
     void Start()
     {
-        Animator lidAnimation = gameObject.GetComponent<Animator>();
+        Animator lidAnimation = gameObject.GetComponent<Animator>(); // Get the lid animation
     }
 
-    void OnTriggerEnter(Collider trigger)
+    void OnTriggerEnter(Collider trigger) //If the player walks into the chest collider
     {
-        radius = trigger.gameObject.name;
+        radius = trigger.gameObject.name; //set the radius to the player
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class TriggerAnimation : MonoBehaviour
             {
                 RaycastReturn = hit.collider.gameObject.name;
                 
-                if(RaycastReturn == "Chest" && Input.GetMouseButtonDown(1) && radius == "Player")
+                if((RaycastReturn == "Chest" || RaycastReturn == "Chest(Clone)") && Input.GetMouseButtonDown(1) && radius == "Player")
                 {
                     lidAnimation.Play();
                     loot.calculateLoot();
