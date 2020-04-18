@@ -18,6 +18,7 @@ public class LootScript : MonoBehaviour
     public float distanceToSpawnFromPlayer;
     public Vector2 xRange;
     public Vector2 yRange;
+
     public void calculateLoot()
     {
         int calcDropChance = Random.Range(0, 101); //Calculates if you get loot at all.

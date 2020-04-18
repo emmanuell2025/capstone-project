@@ -176,10 +176,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  maxMana: 100
+  loot: {fileID: 7845065052109450110, guid: 023d7150690451e42aeeaa6449817584, type: 3}
   damage:
     baseValue: 5
   armor:
     baseValue: 2
+  magicAttack:
+    baseValue: 0
+  magicDefense:
+    baseValue: 0
+  attackCooldown:
+    baseValue: 0
+  attackSpeed:
+    baseValue: 0
 --- !u!114 &5596370784671514846
 MonoBehaviour:
   m_ObjectHideFlags: 0
