@@ -6,7 +6,6 @@ public class CharacterStats : MonoBehaviour
     public int maxMana = 100;
     public int currentHealth { get; private set; }
     public int currentMana { get; private set; }
-
     public Stat damage;
     public Stat armor;
     public Stat magicAttack;
