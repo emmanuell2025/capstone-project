@@ -12,7 +12,7 @@ public class CharacterStats : MonoBehaviour
     public Stat attackCooldown;
     public Stat attackSpeed;
 
-   public event System.Action<int, int> OnHealthChanged;
+    public event System.Action<int, int> OnHealthChanged;
 
     void Awake()
     {
