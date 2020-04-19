@@ -21,8 +21,8 @@ public class CharacterStats : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    
-     
+
+
 
     public void TakeDamage(int damage)
     {
@@ -38,14 +38,10 @@ public class CharacterStats : MonoBehaviour
 
         DetermineIfHealthChanged();
 
-        FindObjectOfType<AudioManager>().Play("PlayerTakeDamage");
-
-        Debug.Log("Audio sound should play.");
-
         if (currentHealth <= 0)
         {
             Die();
-        }        
+        }
     }
 
     public void DetermineIfHealthChanged() //Used for updating HealthBars.

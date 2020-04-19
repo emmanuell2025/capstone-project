@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class EnemyStats : CharacterStats
 {
+    public AudioClip painSound;
+    public AudioSource headSource;
 
     public override void Die()
     {
+        headSource.PlayOneShot(painSound);
         base.Die();
         //Death Animation
         Destroy(gameObject);
