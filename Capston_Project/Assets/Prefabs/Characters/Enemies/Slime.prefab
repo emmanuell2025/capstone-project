@@ -124,10 +124,6 @@ MonoBehaviour:
     baseValue: 10
   armor:
     baseValue: 3
-  magicAttack:
-    baseValue: 0
-  magicDefense:
-    baseValue: 0
   attackCooldown:
     baseValue: 0
   attackSpeed:
@@ -240,6 +236,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1380354643390341104}
     m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: 2b40b6b511c40c845a1bc23f350714c2,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: a6206026bf05c7840b25aef4891e5d33,
+        type: 2}
     - target: {fileID: -4216859302048453862, guid: 2b40b6b511c40c845a1bc23f350714c2,
         type: 3}
       propertyPath: m_LocalPosition.x
