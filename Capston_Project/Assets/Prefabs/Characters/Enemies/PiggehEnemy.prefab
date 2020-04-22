@@ -64,7 +64,7 @@ Transform:
   m_GameObject: {fileID: 2653898147673447945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.95, y: 8.36, z: 24.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 2653898147187297236}
   - {fileID: 7038632002042206131}
@@ -163,10 +163,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 40
+  maxMana: 100
   damage:
     baseValue: 10
   armor:
     baseValue: 3
+  attackCooldown:
+    baseValue: 0
+  attackSpeed:
+    baseValue: 0
 --- !u!114 &2653898147673447947
 MonoBehaviour:
   m_ObjectHideFlags: 0

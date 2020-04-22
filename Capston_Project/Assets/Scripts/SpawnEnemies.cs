@@ -1,10 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+
 
 public class SpawnEnemies : MonoBehaviour
 {
-    public GameObject theEnemy;
+    public GameObject[] enemy = new GameObject[3];
+    
+    public GameObject theBoss;       
+
+    private int enemyCount = 0;
+    public int spawnAmount = 100;
+
+    //public GameObject dungeon = GameObject.Find("DungeonGenerator");
+
+
     public int xPosition;
     public int yPosition;
     public int zPosition;
@@ -14,15 +25,15 @@ public class SpawnEnemies : MonoBehaviour
          This needs to be changed at some point.
     */
 
-    int xMinimum = 15;
-    int xMaximum = 35;
-    int yMinimum = 4;
-    int yMaximum = 8;
-    int zMinimum = 15;
-    int zMaximum = 35;
+    int xMinimum = 0;
+    int xMaximum = 200;
+    int yMinimum = 0;
+    int yMaximum = 2;
+    int zMinimum = 0;
+    int zMaximum = 200;
 
 
-    public int enemyCount; //Default will be ZERO;
+     
     void Start()
     {
         StartCoroutine(EnemyDrop());
@@ -30,15 +41,27 @@ public class SpawnEnemies : MonoBehaviour
 
     IEnumerator EnemyDrop()
     {
-        while (enemyCount < 10)
+
+        
+        while (enemyCount < spawnAmount)
         {
+            int i = (Random.Range(1, 200)) % 3;
+            
             xPosition = Random.Range(xMinimum, xMaximum);
             yPosition = Random.Range(yMinimum, yMaximum);
             zPosition = Random.Range(zMinimum, zMaximum);
 
-            Instantiate(theEnemy, new Vector3(xPosition, yPosition, zPosition), Quaternion.identity);
+            Instantiate(enemy[i], new Vector3(xPosition, yPosition, zPosition), Quaternion.identity);
             yield return new WaitForSeconds(0.1f);
             enemyCount += 1;
         }
+
+        xPosition = Random.Range(xMinimum, xMaximum);
+        yPosition = Random.Range(yMinimum, yMaximum);
+        zPosition = Random.Range(zMinimum, zMaximum);
+
+        Instantiate(theBoss, new Vector3(xPosition, yPosition, zPosition), Quaternion.identity);
+        yield return new WaitForSeconds(0.1f);
+        enemyCount += 1;
     }
 }
