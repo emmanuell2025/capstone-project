@@ -15214,14 +15214,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.71666664
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.71666664
+  - time: 0.7
     functionName: Footsteps
     data: 
     objectReferenceParameter: {fileID: 0}
