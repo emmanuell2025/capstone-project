@@ -11,6 +11,7 @@ public class TriggerAnimation : MonoBehaviour
     RaycastHit hit;
     private string RaycastReturn;
     private string radius;
+    private bool isOpened = false;
 
 
     
@@ -35,10 +36,11 @@ public class TriggerAnimation : MonoBehaviour
             if(hit.collider != null)
             {
                 RaycastReturn = hit.collider.gameObject.name;
-                
-                if((RaycastReturn == "Chest" || RaycastReturn == "Chest(Clone)") && Input.GetMouseButtonDown(1) && radius == "Player")
+
+                if ((RaycastReturn == "Chest" || RaycastReturn == "Chest(Clone)") && Input.GetMouseButtonDown(1) && radius == "Player" && isOpened == false)
                 {
                     lidAnimation.Play();
+                    isOpened = true;
                     loot.calculateLoot();
                 }
             }

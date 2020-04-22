@@ -19,7 +19,7 @@ public class EnemyLootScript : MonoBehaviour
     public Vector2 xRange;
     public Vector2 yRange;
 
-    public void calculateLoot()
+    public void CalculateLoot()
     {
         int calcDropChance = Random.Range(0, 101); //Calculates if you get loot at all.
 
