@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3714214282517520184}
   - component: {fileID: 5679193650285552910}
   - component: {fileID: 2156104791085242871}
-  m_Layer: 0
-  m_Name: Torch
+  m_Layer: 10
+  m_Name: Torchandparticlesystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5933811224382604230}
   - component: {fileID: 5933811224382604228}
   - component: {fileID: 5933811224382604231}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4846,7 +4846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5933811225358331993}
   - component: {fileID: 5933811225358331974}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

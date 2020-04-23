@@ -11,17 +11,43 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject optionsMenuUI;
 
+    public GameObject developerMenuUI;
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
           if (GameIsPaused){
-            Resume();
+            if (optionsMenuUI.activeInHierarchy == true){
+              optionsMenuUI.SetActive(false);
+              pauseMenuUI.SetActive(true);
+            }
+            else {
+              Resume();
+            }
           }
           else {
             Pause();
           }
         }
+        if (Input.GetKeyDown(KeyCode.Tab)){
+          if (GameIsPaused)
+            if ((optionsMenuUI.activeInHierarchy == true)){
+              optionsMenuUI.SetActive(false);
+            }
+            else if ((pauseMenuUI.activeInHierarchy == true)){
+              pauseMenuUI.SetActive(false);
+            }
+            else {
+              developerMenuUI.SetActive(false);
+              Resume();
+            }
+            else {
+              Pause();
+              pauseMenuUI.SetActive(false);
+              developerMenuUI.SetActive(true);
+            }
+          }
     }
     public void Resume() {
       pauseMenuUI.SetActive(false);

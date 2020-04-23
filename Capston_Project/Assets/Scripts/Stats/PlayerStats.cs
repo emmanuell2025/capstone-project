@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerStats : CharacterStats
 {
+    public AudioClip painSound;
+    public AudioSource headSource;
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         EquipmentManager.instance.onEquipmentchanged += OnEquipmentChanged;
     }
 
@@ -29,7 +31,9 @@ public class PlayerStats : CharacterStats
     public override void Die()
     {
         base.Die();
+        headSource.PlayOneShot(painSound);
         PlayerManager.instance.KillPlayer();
 
     }
+
 }

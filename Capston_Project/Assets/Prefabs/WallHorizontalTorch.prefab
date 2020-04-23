@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6834198123864557659}
-  m_Layer: 0
-  m_Name: WallHorizontal(Clone)
+  m_Layer: 10
+  m_Name: WallHorizontalTorch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6834198124999920227}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Grey_Wall_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 6834198125551509151}
   - component: {fileID: 6834198125551509149}
   - component: {fileID: 6834198125551509148}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh1_Grey_Wall_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,6 +153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Torch
+      objectReference: {fileID: 0}
+    - target: {fileID: 419067788774436139, guid: 2aee5021d62956146a68d5ebaeaecb41,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3714214282517520184, guid: 2aee5021d62956146a68d5ebaeaecb41,
         type: 3}
@@ -444,6 +449,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.41
       objectReference: {fileID: 0}
+    - target: {fileID: 5933811224382604249, guid: 2aee5021d62956146a68d5ebaeaecb41,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5933811225358331974, guid: 2aee5021d62956146a68d5ebaeaecb41,
         type: 3}
       propertyPath: m_Intensity
@@ -463,6 +473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933811225358331992, guid: 2aee5021d62956146a68d5ebaeaecb41,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aee5021d62956146a68d5ebaeaecb41, type: 3}

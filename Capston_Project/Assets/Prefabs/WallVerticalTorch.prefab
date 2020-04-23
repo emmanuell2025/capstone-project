@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3428729853245826584}
   - component: {fileID: 3428729853245826582}
   - component: {fileID: 3428729853245826585}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh1_Grey_Wall_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3428729854048183712}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Grey_Wall_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,8 +119,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3428729854330761746}
-  m_Layer: 0
-  m_Name: WallVertical(Clone)
+  m_Layer: 10
+  m_Name: WallVerticalTorch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4842512456216799991}
   - component: {fileID: 5572370608696956568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 4202610303282102196}
   - component: {fileID: 7043762239628458393}
   - component: {fileID: 5800330089249937368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Torch(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 5094917817633601947}
   - component: {fileID: 3220527290614385508}
   - component: {fileID: 1880180476678282198}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
