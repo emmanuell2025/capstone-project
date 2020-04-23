@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6166685846534198363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789299427057952433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce9d9c48b0aca443a3dbdb21db97c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combat: {fileID: 6166685845226200346}
 --- !u!1 &6166685845226200344
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +159,7 @@ MonoBehaviour:
     baseValue: 0
   attackSpeed:
     baseValue: 0
-  loot: {fileID: 0}
+  loot: {fileID: 2647215147476445247, guid: 6f522967862d60d4f9fd4fc10925d8d9, type: 3}
 --- !u!114 &6166685845226200346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,19 +235,6 @@ Transform:
   m_Father: {fileID: 6166685845226200339}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6166685846534198363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2789299427057952433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ce9d9c48b0aca443a3dbdb21db97c92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combat: {fileID: 6166685845226200346}
 --- !u!1001 &6166685845524987832
 PrefabInstance:
   m_ObjectHideFlags: 0

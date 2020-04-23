@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2647215147476445244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2647215147476445246}
+  - component: {fileID: 2647215147476445247}
+  m_Layer: 0
+  m_Name: Enemy Loot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2647215147476445246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2647215147476445244}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.7737274, y: -12.209341, z: -36.665405}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2647215147476445247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2647215147476445244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df3343b44ab1154386f5b6866eaf854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LootTable:
+  - itemName: Leggings
+    item: {fileID: 3403403288753365602, guid: 808fcec501d71ad469a464e509b1ce8e, type: 3}
+    dropRarity: 20
+  - itemName: Chestplate
+    item: {fileID: 3816175038944459964, guid: 1ac63df97372e8f47877d9c859e8845c, type: 3}
+    dropRarity: 20
+  - itemName: Health Potion
+    item: {fileID: 1675427246554495252, guid: bd4107056b9a72b48bc17b58e1cf03a2, type: 3}
+    dropRarity: 100
+  - itemName: 
+    item: {fileID: 0}
+    dropRarity: 0
+  - itemName: 
+    item: {fileID: 0}
+    dropRarity: 0
+  dropChance: 100
+  player: {fileID: 3428263666829869838, guid: 144dde0ffddff8f44830872fba995b53, type: 3}
+  spawnDistance: 1
+  xRange: {x: 0, y: 0.7}
+  yRange: {x: 0, y: 0}
