@@ -258,6 +258,7 @@ MonoBehaviour:
     baseValue: 0
   painSound: {fileID: 0}
   headSource: {fileID: 0}
+  loot: {fileID: 8488756249316924022, guid: 8723ce356bf9c3c4d94f1d738be8234d, type: 3}
 --- !u!114 &1380354643390341113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,15 +852,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d96b89ad925808bc39beb4a6b6883eb6, type: 3}
---- !u!82 &7038479268948164206 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6724655851293768665, guid: d96b89ad925808bc39beb4a6b6883eb6,
-    type: 3}
-  m_PrefabInstance: {fileID: 4395360699434845623}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7038479268948164207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6724655851293768664, guid: d96b89ad925808bc39beb4a6b6883eb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4395360699434845623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7038479268948164206 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6724655851293768665, guid: d96b89ad925808bc39beb4a6b6883eb6,
     type: 3}
   m_PrefabInstance: {fileID: 4395360699434845623}
   m_PrefabAsset: {fileID: 0}
