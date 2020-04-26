@@ -8,8 +8,8 @@ using UnityEngine.AI;
 public class SpawnEnemies : MonoBehaviour
 {
     public GameObject[] enemy = new GameObject[3];
-    
-    public GameObject theBoss;       
+
+    public GameObject theBoss;
 
     private int enemyCount = 0;
     public int spawnAmount = 100;
@@ -33,17 +33,26 @@ public class SpawnEnemies : MonoBehaviour
     int zMinimum = 0;
     int zMaximum = 200;
 
+    public bool spawnedCheck = false;
 
-     
+
+
     void Start()
     {
+        // StartCoroutine(EnemyDrop());
+    }
+    void Update()
+    {
+      if (spawnedCheck == false){
         StartCoroutine(EnemyDrop());
+        spawnedCheck = true;
+      }
     }
 
     IEnumerator EnemyDrop()
     {
 
-        
+
         while (enemyCount < spawnAmount)
         {
             int i = (Random.Range(1, 200)) % 3;
