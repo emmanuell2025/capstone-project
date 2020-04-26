@@ -7,9 +7,12 @@ public class EnemyCounter : MonoBehaviour
 {
     GameObject[] enemies;
     public Text enemyCountText;
+    private int prevValue = 0;
+    private int currentValue;
+    public EnemyLootScript loot;
     void Start()
     {
-        
+        currentValue = enemies.Length;
     }
 
     // Update is called once per frame
@@ -18,7 +21,22 @@ public class EnemyCounter : MonoBehaviour
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         enemyCountText.text = "Enemies : " + enemies.Length.ToString();
-        
 
+        Drop();
     }
+
+    void Drop()
+    {
+        currentValue = enemies.Length;
+
+        if(currentValue < prevValue)
+        {
+            loot.CalculateLoot();
+
+        }
+            prevValue = currentValue;
+        return;
+        
+    }
+
 }
