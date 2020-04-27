@@ -13,6 +13,10 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject developerMenuUI;
 
+    GameObject[] enemies;
+
+    public int enemyCount;
+
     // Update is called once per frame
     void Update()
     {
@@ -72,5 +76,12 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame(){
       Debug.Log("Quitting Game...");
       Application.Quit();
+    }
+    public void KillAllEnemies(){
+      enemies = GameObject.FindGameObjectsWithTag("Enemy");
+      enemyCount = enemies.Length;
+      for (int i = 0; i < enemyCount; i++){
+        Destroy(enemies[i]);
+      }
     }
 }
