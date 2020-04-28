@@ -9,19 +9,15 @@ AnimatorOverrideController:
   m_Name: SlimeOverride
   m_Controller: {fileID: 9100000, guid: e977f6c0a62fe144381532b02007d144, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: -974551002594328143, guid: 68b4cd2cdfe8a024482dd3e367ad51cf,
+  - m_OriginalClip: {fileID: 7400000, guid: e229158bc380c110e9a5d9a52d987898, type: 2}
+    m_OverrideClip: {fileID: -8945691123924629249, guid: 2b40b6b511c40c845a1bc23f350714c2,
       type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 02f6e666a693ff500a99b4ff05ba7c77, type: 2}
     m_OverrideClip: {fileID: 4781951162920444690, guid: 2b40b6b511c40c845a1bc23f350714c2,
       type: 3}
-  - m_OriginalClip: {fileID: -1404718283012414390, guid: 68b4cd2cdfe8a024482dd3e367ad51cf,
-      type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 2c1e0039b46b3dc568400e987d1bb886, type: 2}
     m_OverrideClip: {fileID: -8945691123924629249, guid: 2b40b6b511c40c845a1bc23f350714c2,
       type: 3}
-  - m_OriginalClip: {fileID: -1610863427237328480, guid: 68b4cd2cdfe8a024482dd3e367ad51cf,
-      type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 809b26bd89ce3094c83376a6b610e2c6, type: 2}
     m_OverrideClip: {fileID: 8349542763059015795, guid: 2b40b6b511c40c845a1bc23f350714c2,
-      type: 3}
-  - m_OriginalClip: {fileID: -3100369314251171874, guid: 68b4cd2cdfe8a024482dd3e367ad51cf,
-      type: 3}
-    m_OverrideClip: {fileID: -8945691123924629249, guid: 2b40b6b511c40c845a1bc23f350714c2,
       type: 3}
