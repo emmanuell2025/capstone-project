@@ -44,7 +44,7 @@ public class SpawnEnemies : MonoBehaviour
     {
 
         
-        while (enemyCount < spawnAmount)
+        while (enemyCount <= spawnAmount)
         {
             int i = (Random.Range(1, 200)) % 3;
             /*

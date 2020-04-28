@@ -41,7 +41,7 @@ public class ChestAnimation : MonoBehaviour
                 {
                     lidAnimation.Play();
                     isOpened = true;
-                    loot.calculateLoot();
+                    Destroy(gameObject, lidAnimation.clip.length);
                 }
             }
         }

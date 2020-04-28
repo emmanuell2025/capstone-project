@@ -11,7 +11,7 @@ public class SpawnChests : MonoBehaviour
          
 
     private int chestCount = 0;
-    public int spawnAmount = 100;
+    public int amount = 100;
 
     //public GameObject dungeon = GameObject.Find("DungeonGenerator");
 
@@ -31,19 +31,30 @@ public class SpawnChests : MonoBehaviour
     int yMaximum = 2;
     int zMinimum = 0;
     int zMaximum = 200;
+    private bool isSpawned = false;
 
 
      
     void Start()
     {
-        StartCoroutine(EnemyDrop());
+        //StartCoroutine(ChestDrop());
     }
 
-    IEnumerator EnemyDrop()
+    void Update()
+    {
+        if (!isSpawned)
+        {
+            StartCoroutine(ChestDrop());
+            isSpawned = true;
+        }
+
+    }
+
+    IEnumerator ChestDrop()
     {
 
         
-        while (chestCount < spawnAmount)
+        while (chestCount < amount)
         {
             int i = (Random.Range(1, 200)) % 3;
             /*
@@ -51,13 +62,13 @@ public class SpawnChests : MonoBehaviour
             yPosition = Random.Range(yMinimum, yMaximum);
             zPosition = Random.Range(zMinimum, zMaximum);
             */
-            Vector3 aPoint = GetRandomLocation();
+            Vector3 aPoint = GetRandomLocations();
             Instantiate(chest[i], new Vector3(aPoint.x,aPoint.y, aPoint.z), Quaternion.identity);    //xPosition, yPosition, zPosition), Quaternion.identity
             yield return new WaitForSeconds(0.1f);
             chestCount += 1;
         }
 
-        Vector3 bossSpot = GetRandomLocation();
+        Vector3 bossSpot = GetRandomLocations();
         /*
         xPosition = Random.Range(xMinimum, xMaximum);
         yPosition = Random.Range(yMinimum, yMaximum);
@@ -67,7 +78,7 @@ public class SpawnChests : MonoBehaviour
         chestCount += 1;
     }
 
-    Vector3 GetRandomLocation()
+    Vector3 GetRandomLocations()
     {
         NavMeshTriangulation navMeshData = NavMesh.CalculateTriangulation();
 
