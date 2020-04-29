@@ -27,9 +27,9 @@ public class EnemyCounter : MonoBehaviour
         Slime = GameObject.FindGameObjectsWithTag("Slime");
         Big = GameObject.FindGameObjectsWithTag("Big");
 
-        enemyCountText.text = "Piggeh : " + Piggeh.Length.ToString() + "\n";
+        enemyCountText.text = "Little Piggeh : " + Piggeh.Length.ToString() + "\n";
         enemyCountText.text += "Slime : " + Slime.Length.ToString() + "\n";
-        enemyCountText.text += "Big : " + Big.Length.ToString();
+        enemyCountText.text += "Big Piggeh : " + Big.Length.ToString();
 
 
 
@@ -46,7 +46,6 @@ public class EnemyCounter : MonoBehaviour
         if(currentValue < prevValue)
         {
             loot.CalculateLoot();
-
         }
             prevValue = currentValue;
         return;

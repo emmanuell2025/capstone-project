@@ -35,7 +35,7 @@ public class SpawnChests : MonoBehaviour
      
     void Start()
     {
-        //StartCoroutine(ChestDrop());
+        StartCoroutine(ChestDrop());
     }
 
     void Update()
@@ -60,7 +60,6 @@ public class SpawnChests : MonoBehaviour
             */
             Vector3 aPoint = GetRandomLocations();
             Instantiate(chest[i], new Vector3(aPoint.x,aPoint.y, aPoint.z), Quaternion.identity);    //xPosition, yPosition, zPosition), Quaternion.identity
-            Debug.Log("Chest spawner here");
             yield return new WaitForSeconds(0.1f);
             chestCount += 1;
         }

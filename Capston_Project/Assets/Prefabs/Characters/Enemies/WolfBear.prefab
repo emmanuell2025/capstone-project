@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 6130907067769531869}
   m_Layer: 0
   m_Name: WolfBear
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1141,15 +1141,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c8dd0bd67bd96c8aac6fe200b63f14, type: 3}
---- !u!4 &6766610331408120609 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
-    type: 3}
-  m_PrefabInstance: {fileID: 7027528579315888183}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &6766610331408120608 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4350785364115770135, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
+    type: 3}
+  m_PrefabInstance: {fileID: 7027528579315888183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6766610331408120609 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
     type: 3}
   m_PrefabInstance: {fileID: 7027528579315888183}
   m_PrefabAsset: {fileID: 0}
