@@ -8,10 +8,13 @@ using UnityEngine.AI;
 public class SpawnEnemies : MonoBehaviour
 {
     public GameObject[] enemy = new GameObject[3];
-    
-    public GameObject theBoss;       
+    GameObject[] enemies;
+
+    public GameObject theBoss;
+    private bool bossSpawn = false;
 
     private int enemyCount = 0;
+    private int enemyCount2 = 0;
     public int spawnAmount = 100;
 
     //public GameObject dungeon = GameObject.Find("DungeonGenerator");
@@ -33,17 +36,42 @@ public class SpawnEnemies : MonoBehaviour
     int zMinimum = 0;
     int zMaximum = 200;
 
+    public bool spawnedCheck = false;
 
-     
+
+
     void Start()
     {
+        // StartCoroutine(EnemyDrop());
+    }
+    void Update()
+    {
+      if (spawnedCheck == false){
         StartCoroutine(EnemyDrop());
+        spawnedCheck = true;
+      }
+      enemies = GameObject.FindGameObjectsWithTag("Enemy");
+      enemyCount2 = enemies.Length;
+      if (spawnedCheck == true){
+        Debug.Log("Enemies Spawned");
+        if (enemyCount2 == 0){
+          Debug.Log("Enemies 0");
+          if (bossSpawn == false){
+            Instantiate(theBoss);
+            Debug.Log("Spawning Boss");
+            bossSpawn = true;
+          }
+          // if(theBoss == null){
+          //   Debug.Log("Boss Spawn");
+          // }
+        }
+      }
     }
 
     IEnumerator EnemyDrop()
     {
 
-        
+
         while (enemyCount < spawnAmount)
         {
             int i = (Random.Range(1, 200)) % 3;
@@ -57,16 +85,10 @@ public class SpawnEnemies : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             enemyCount += 1;
         }
-
-        Vector3 bossSpot = GetRandomLocation();
-        /*
-        xPosition = Random.Range(xMinimum, xMaximum);
-        yPosition = Random.Range(yMinimum, yMaximum);
-        zPosition = Random.Range(zMinimum, zMaximum);
-        */
-        Instantiate(theBoss, new Vector3(bossSpot.x, bossSpot.y, bossSpot.z), Quaternion.identity);
-        yield return new WaitForSeconds(0.1f);
-        enemyCount += 1;
+        if (enemyCount < 1){
+          Debug.Log("This should spawn Boss");
+        }
+        // enemyCount += 1;
     }
 
     Vector3 GetRandomLocation()
@@ -82,4 +104,14 @@ public class SpawnEnemies : MonoBehaviour
 
         return point;
     }
+    // void SpawnBoss(){
+    //   Vector3 bossSpot = GetRandomLocation();
+    //   /*
+    //   xPosition = Random.Range(xMinimum, xMaximum);
+    //   yPosition = Random.Range(yMinimum, yMaximum);
+    //   zPosition = Random.Range(zMinimum, zMaximum);
+    //   */
+    //   Instantiate(theBoss, new Vector3(bossSpot.x, bossSpot.y, bossSpot.z), Quaternion.identity);
+    //   yield return new WaitForSeconds(0.1f);
+    // }
 }
