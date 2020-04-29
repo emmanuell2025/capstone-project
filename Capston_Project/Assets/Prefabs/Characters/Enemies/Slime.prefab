@@ -258,6 +258,7 @@ MonoBehaviour:
     baseValue: 0
   painSound: {fileID: 0}
   headSource: {fileID: 0}
+  loot: {fileID: 8488756249316924022, guid: 8723ce356bf9c3c4d94f1d738be8234d, type: 3}
 --- !u!114 &1380354643390341113
 MonoBehaviour:
   m_ObjectHideFlags: 0
