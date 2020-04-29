@@ -8,10 +8,12 @@ using UnityEngine.AI;
 public class SpawnEnemies : MonoBehaviour
 {
     public GameObject[] enemy = new GameObject[3];
-    GameObject[] enemies;
+    GameObject[] piggeh;
+    GameObject[] slime;
+    GameObject[] big;
 
     public GameObject theBoss;
-    private bool bossSpawn = false;
+    public bool bossSpawn = false;
 
     private int enemyCount = 0;
     private int enemyCount2 = 0;
@@ -42,7 +44,7 @@ public class SpawnEnemies : MonoBehaviour
 
     void Start()
     {
-        // StartCoroutine(EnemyDrop());
+        spawnedCheck = false;
     }
     void Update()
     {
@@ -50,8 +52,12 @@ public class SpawnEnemies : MonoBehaviour
         StartCoroutine(EnemyDrop());
         spawnedCheck = true;
       }
-      enemies = GameObject.FindGameObjectsWithTag("Enemy");
-      enemyCount2 = enemies.Length;
+      piggeh = GameObject.FindGameObjectsWithTag("Enemy");
+      slime = GameObject.FindGameObjectsWithTag("Slime");
+      big = GameObject.FindGameObjectsWithTag("Big");
+      enemyCount2 = piggeh.Length;
+      enemyCount2 += slime.Length;
+      enemyCount2 += big.Length;
       if (spawnedCheck == true){
         Debug.Log("Enemies Spawned");
         if (enemyCount2 == 0){
