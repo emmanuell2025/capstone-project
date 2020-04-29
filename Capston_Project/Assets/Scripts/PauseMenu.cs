@@ -13,9 +13,13 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject developerMenuUI;
 
-    GameObject[] enemies;
+    GameObject[] Piggeh;
+    GameObject[] Slime;
+    GameObject[] Big;
 
-    public int enemyCount;
+    public int piggehCount;
+    public int bigCount;
+    public int slimeCount;
 
     // Update is called once per frame
     void Update()
@@ -78,10 +82,20 @@ public class PauseMenu : MonoBehaviour
       Application.Quit();
     }
     public void KillAllEnemies(){
-      enemies = GameObject.FindGameObjectsWithTag("Enemy");
-      enemyCount = enemies.Length;
-      for (int i = 0; i < enemyCount; i++){
-        Destroy(enemies[i]);
+      Piggeh = GameObject.FindGameObjectsWithTag("Enemy");
+      Slime = GameObject.FindGameObjectsWithTag("Slime");
+      Big = GameObject.FindGameObjectsWithTag("Big");
+      piggehCount = Piggeh.Length;
+      bigCount += Big.Length;
+      slimeCount += Slime.Length;
+      for (int i = 0; i < piggehCount; i++){
+        Destroy(Piggeh[i]);
+      }
+      for (int i = 0; i < bigCount; i++){
+        Destroy(Big[i]);
+      }
+      for (int i = 0; i < slimeCount; i++){
+        Destroy(Slime[i]);
       }
     }
 }
