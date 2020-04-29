@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class EnemyCounter : MonoBehaviour
 {
-    GameObject[] enemies;
+    GameObject[] Piggeh;
+    GameObject[] Slime;
+    GameObject[] Big;
+
     public Text enemyCountText;
     void Start()
     {
@@ -15,10 +18,16 @@ public class EnemyCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        Piggeh = GameObject.FindGameObjectsWithTag("Enemy");
+        Slime = GameObject.FindGameObjectsWithTag("Slime");
+        Big = GameObject.FindGameObjectsWithTag("Big");
 
-        enemyCountText.text = "Enemies : " + enemies.Length.ToString();
-        
+        enemyCountText.text = "Piggeh : " + Piggeh.Length.ToString() + "\n";
+        enemyCountText.text += "Slime : " + Slime.Length.ToString() + "\n";
+        enemyCountText.text += "Big : " + Big.Length.ToString();
+
+
+
 
     }
 }
