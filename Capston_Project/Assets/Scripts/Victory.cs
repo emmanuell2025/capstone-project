@@ -18,7 +18,7 @@ public class Victory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      enemies = GameObject.FindGameObjectsWithTag("Enemy");
+      enemies = GameObject.FindGameObjectsWithTag("Boss");
       if (enemySpawn.GetComponent<SpawnEnemies>().bossSpawn == true){
         if (enemies.Length == 0){
           victoryUI.SetActive(true);
