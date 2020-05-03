@@ -24,13 +24,14 @@ public class DungeonCreator : MonoBehaviour
     List<Vector3Int> possibleWallVerticalPosition;
     public NavMeshSurface surface;
     public int torchCounter = 0;
-    public GameObject enemySpawn;
+    private GameObject enemySpawn;
     // Start is called before the first frame update
     void Start()
     {
 
         CreateDungeon();
         surface.BuildNavMesh();
+        
         if (enemySpawn != null){
           Destroy(enemySpawn);
         }

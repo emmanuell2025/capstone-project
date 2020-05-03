@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8089992761117879744}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5573622993997754333}
   - component: {fileID: 3517819023542109993}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,6 +125,100 @@ SkinnedMeshRenderer:
     m_Center: {x: -2.3283064e-10, y: 0.0018689889, z: -0.00033663074}
     m_Extent: {x: 0.005299434, y: 0.009880798, z: 0.0049974797}
   m_DirtyAABB: 0
+--- !u!1 &526047522346891194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6941974120728444317}
+  - component: {fileID: 2449640782943036658}
+  - component: {fileID: 6945704152294610276}
+  - component: {fileID: 4551594838940956359}
+  m_Layer: 8
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6941974120728444317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526047522346891194}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 8.369667, z: 0}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
+  m_Children: []
+  m_Father: {fileID: 2653898147673447938}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &2449640782943036658
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526047522346891194}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6945704152294610276
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526047522346891194}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d5145dd00f8a82f4bab9c054f627e379, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &4551594838940956359
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526047522346891194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1301840741899276839
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4280231716585803309}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jaw_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5357002517283829308}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3122692199950720187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FrontLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3350616013199850546}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RearLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4972374181153026684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail2_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5323950473098158113}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RearLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2653898147187297236}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Health_UI_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +450,7 @@ GameObject:
   - component: {fileID: 2653898147673447947}
   - component: {fileID: 2653898147673447946}
   - component: {fileID: 2653898147673447939}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PiggehEnemy
   m_TagString: Big
   m_Icon: {fileID: 0}
@@ -376,6 +470,7 @@ Transform:
   m_Children:
   - {fileID: 2653898147187297236}
   - {fileID: 7038632002042206131}
+  - {fileID: 6941974120728444317}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -441,8 +536,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4c480bec34a9846b2efe2475ae7d63, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   lookRadius: 10
 --- !u!114 &2653898147673447949
 MonoBehaviour:
@@ -454,8 +549,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7e541fd33dc754478c6c341bda09228, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 2653898147673447938}
 --- !u!114 &2653898147673447948
@@ -468,8 +563,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf029f9cebc448746ad02ce8027a36f1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxHealth: 40
   maxMana: 100
   damage:
@@ -482,7 +577,6 @@ MonoBehaviour:
     baseValue: 0
   painSound: {fileID: 0}
   headSource: {fileID: 0}
-  loot: {fileID: 8488756249316924022, guid: 8723ce356bf9c3c4d94f1d738be8234d, type: 3}
 --- !u!114 &2653898147673447947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,8 +587,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c355749d5b8b45f41a9a063ee9bf6f39, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   attackSpeed: 1
   attackDelay: 0.6
 --- !u!114 &2653898147673447946
@@ -507,8 +601,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4390f0ade513bd5449a7caab7ff22bc2, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   uiPrefab: {fileID: 145369298655140777, guid: c416dc6017d0b6742a8eab5328012cf2, type: 3}
   target: {fileID: 2653898147187297236}
 --- !u!114 &2653898147673447939
@@ -521,8 +615,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 823bb21279be8ac449eafaa54628dfa1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   replaceableAttackAnim: {fileID: -974551002594328143, guid: 68b4cd2cdfe8a024482dd3e367ad51cf,
     type: 3}
   defaultAttackAnimSet:
@@ -538,7 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6701413579444984893}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4695125177494633362}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Nose_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3712032341632073698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RearLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1154582249550638666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FrontLeg.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +758,7 @@ GameObject:
   - component: {fileID: 1091064366972320457}
   - component: {fileID: 2653898146834159434}
   - component: {fileID: 5412468646641122622}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: piggeh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +796,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -716,8 +810,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ce9d9c48b0aca443a3dbdb21db97c92, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   combat: {fileID: 2653898147673447947}
 --- !u!114 &5412468646641122622
 MonoBehaviour:
@@ -729,8 +823,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc635d6b97421be778c54f92c312b990, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   footstep: {fileID: 8300000, guid: 48fd21fda1ca99cfebc66916d0b6c0f1, type: 3}
   pigAttack: {fileID: 8300000, guid: 07f5ce8f147f3a73eaa8b047269e0b92, type: 3}
   feetAudioSource: {fileID: 1978769551028540294}
@@ -745,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8811742515903702291}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8702160932034084259}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RearLeg.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -807,7 +901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7604788765811790096}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7226500160203927093}
   - component: {fileID: 7226500160203927092}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PigTailSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,7 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3513686705223196352}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1002,7 +1096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899311403167266115}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FrontLeg.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7197982894957506686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2410632691701305339}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FrontLeg.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,6 +1192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PigFeetSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350785364115770133, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
         type: 3}
@@ -1235,17 +1334,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PigHeadSounds
       objectReference: {fileID: 0}
+    - target: {fileID: 6724655851293768667, guid: d96b89ad925808bc39beb4a6b6883eb6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d96b89ad925808bc39beb4a6b6883eb6, type: 3}
---- !u!4 &4481295605841857219 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6724655851293768664, guid: d96b89ad925808bc39beb4a6b6883eb6,
-    type: 3}
-  m_PrefabInstance: {fileID: 7161291041044492571}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &4481295605841857218 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6724655851293768665, guid: d96b89ad925808bc39beb4a6b6883eb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7161291041044492571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4481295605841857219 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6724655851293768664, guid: d96b89ad925808bc39beb4a6b6883eb6,
     type: 3}
   m_PrefabInstance: {fileID: 7161291041044492571}
   m_PrefabAsset: {fileID: 0}

@@ -1,5 +1,99 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &84571498016220755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4586874230613833664}
+  - component: {fileID: 1965024528485504480}
+  - component: {fileID: 4802532543143077124}
+  - component: {fileID: 209415644145506818}
+  m_Layer: 8
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4586874230613833664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84571498016220755}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 20.9145, z: 10.429999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1380354643390341104}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &1965024528485504480
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84571498016220755}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4802532543143077124
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84571498016220755}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d5145dd00f8a82f4bab9c054f627e379, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &209415644145506818
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84571498016220755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &669624859701259096
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7038092903459236676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5714538460151740287}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2460713463680763670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Core_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7709247031823867431}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +240,7 @@ GameObject:
   - component: {fileID: 1380354643390341112}
   - component: {fileID: 1380354643390341115}
   - component: {fileID: 1380354643390341107}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Slime
   m_TagString: Slime
   m_Icon: {fileID: 0}
@@ -166,6 +260,7 @@ Transform:
   m_Children:
   - {fileID: 1380354643572702498}
   - {fileID: 6220234090301920681}
+  - {fileID: 4586874230613833664}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -217,8 +312,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4c480bec34a9846b2efe2475ae7d63, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   lookRadius: 10
 --- !u!114 &1380354643390341111
 MonoBehaviour:
@@ -230,8 +325,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7e541fd33dc754478c6c341bda09228, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   radius: 2
   interactionTransform: {fileID: 1380354643390341104}
 --- !u!114 &1380354643390341110
@@ -244,8 +339,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf029f9cebc448746ad02ce8027a36f1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxHealth: 40
   maxMana: 100
   damage:
@@ -258,7 +353,6 @@ MonoBehaviour:
     baseValue: 0
   painSound: {fileID: 0}
   headSource: {fileID: 0}
-  loot: {fileID: 8488756249316924022, guid: 8723ce356bf9c3c4d94f1d738be8234d, type: 3}
 --- !u!114 &1380354643390341113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,8 +363,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c355749d5b8b45f41a9a063ee9bf6f39, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   attackSpeed: 1
   attackDelay: 0.6
 --- !u!114 &1380354643390341112
@@ -283,8 +377,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4390f0ade513bd5449a7caab7ff22bc2, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   uiPrefab: {fileID: 145369298655140777, guid: c416dc6017d0b6742a8eab5328012cf2, type: 3}
   target: {fileID: 1380354643572702498}
 --- !u!114 &1380354643390341115
@@ -297,8 +391,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 823bb21279be8ac449eafaa54628dfa1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   replaceableAttackAnim: {fileID: 4781951162920444690, guid: 2b40b6b511c40c845a1bc23f350714c2,
     type: 3}
   defaultAttackAnimSet:
@@ -327,7 +421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1380354643572702498}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Health_UI_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353195814370393075}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3021217455303039091}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 850511679106897394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +544,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6863599784832923706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.002_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5014419971416516977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +607,7 @@ GameObject:
   - component: {fileID: 4096224192363247827}
   - component: {fileID: 1380354644678419342}
   - component: {fileID: 6289084132430338261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +645,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -565,8 +659,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ce9d9c48b0aca443a3dbdb21db97c92, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   combat: {fileID: 1380354643390341113}
 --- !u!114 &6289084132430338261
 MonoBehaviour:
@@ -578,8 +672,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc635d6b97421be778c54f92c312b990, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   footstep: {fileID: 8300000, guid: 5c9b67c3f0a1b0b428106dea04e5aa53, type: 3}
   pigAttack: {fileID: 8300000, guid: 8586d6c5a8d2953fcaffb671f7c9e537, type: 3}
   feetAudioSource: {fileID: 3535340182452245222}
@@ -594,7 +688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2846626785333798757}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right.003_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8302692192056378470}
   - component: {fileID: 4766145785711874472}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,6 +807,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PigFeetSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350785364115770133, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
         type: 3}
@@ -849,6 +948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PigHeadSounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724655851293768667, guid: d96b89ad925808bc39beb4a6b6883eb6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d96b89ad925808bc39beb4a6b6883eb6, type: 3}
