@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3057249997099902747}
   - component: {fileID: 8004933254536251682}
-  - component: {fileID: 8004933254536251683}
   - component: {fileID: 8004933254536251681}
   m_Layer: 0
   m_Name: Chest
@@ -48,25 +47,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 4
   m_Center: {x: 1, y: 0, z: 0}
---- !u!114 &8004933254536251683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033042579244897544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a15eb5a03a681c74fb2440fd3bc45d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LootTable:
-  - itemName: 
-    item: {fileID: 0}
-    dropRarity: 0
-  dropChance: 100
-  player: {fileID: 0}
-  distanceToSpawnFromPlayer: 1
 --- !u!114 &8004933254536251681
 MonoBehaviour:
   m_ObjectHideFlags: 0
