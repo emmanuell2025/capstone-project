@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32092e54f6cf58242b4aaf3167ee3bab, type: 3}
-  m_Name: Sword
+  m_Name: SteelHelmet
   m_EditorClassIdentifier: 
-  itemName: Toy Sword
-  icon: {fileID: 21300000, guid: 4be42e61b1b0616428c83c149d7355cc, type: 3}
+  itemName: Steel Helmet
+  icon: {fileID: 21300000, guid: 46c3d633abc1d5047a44a4e7012e6d32, type: 3}
   isDefaultItem: 0
   itemDescription: 
-  itemPickup: {fileID: 4533123535060611299, guid: 9a13a23b505412944a1b2a5f0827d115,
+  itemPickup: {fileID: 4385253972621937071, guid: 8cba478b2fe467f4685ea73b04a62fde,
     type: 3}
-  equipSlot: 3
-  mesh: {fileID: 137182823541378766, guid: a8693ecc6acbd7f2fa0599aa8fda2538, type: 3}
+  equipSlot: 0
+  mesh: {fileID: 137771535289312678, guid: 710906d4ed9bfb14f91e16431ae99a04, type: 3}
   coveredMeshRegions: 
-  armorModifier: 0
-  damageModifier: 10
+  armorModifier: 2
+  damageModifier: 0
