@@ -7,7 +7,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(CharacterStats))]
 public class HealthUI : MonoBehaviour
 {
-    PlayerHealthBar playerHealth;
     public GameObject uiPrefab;
     public Transform target;
     float visibleTime = 5;
@@ -36,7 +35,7 @@ public class HealthUI : MonoBehaviour
         GetComponent<CharacterStats>().OnHealthChanged += OnHealthChanged;
     }
 
-    public void OnHealthChanged(int maxHealth, int currentHealth)
+     void OnHealthChanged(int maxHealth, int currentHealth)
     {
         if (ui != null)
         {
