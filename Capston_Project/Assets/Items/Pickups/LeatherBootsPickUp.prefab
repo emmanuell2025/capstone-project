@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 6440407740284320485}
   - component: {fileID: 6440407740284320488}
   - component: {fileID: 6440407740284320489}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LeatherBootsPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,6 +189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shoes
+      objectReference: {fileID: 0}
+    - target: {fileID: 8890370470877010927, guid: fda3fcd826a84a04d974ebd2adb9f9ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8890370470888576671, guid: fda3fcd826a84a04d974ebd2adb9f9ff, type: 3}
