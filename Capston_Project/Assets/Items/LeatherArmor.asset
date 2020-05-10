@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LeatherArmor
   m_EditorClassIdentifier: 
   itemName: Leather Armor
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ee2a71c34d9824c44b6c09de3daa5760, type: 3}
   isDefaultItem: 0
   itemDescription: Most basic of armors.
   itemPickup: {fileID: 1537035756282504138, guid: 064248a1ec2a8fa44a8ad03888060e88,

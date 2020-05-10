@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: b6b0716faec21d64da3ea2f16a4fdbf5, type: 3}
   isDefaultItem: 0
   itemDescription: 
-  itemPickup: {fileID: 3801689167402891757, guid: 4e7bfebe58201cb488e7c199f03a8324,
+  itemPickup: {fileID: 1199667575462113588, guid: 858f20b8c7ad98d4aa39cdbab4906458,
     type: 3}
   equipSlot: 3
   mesh: {fileID: 137182823541378766, guid: 15d3032ecafa491429af10c792904030, type: 3}
