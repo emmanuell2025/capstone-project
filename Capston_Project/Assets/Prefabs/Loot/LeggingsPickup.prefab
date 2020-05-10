@@ -1,13 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!33 &3716287678089345703
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7889092612817632448}
-  m_Mesh: {fileID: 1301731239863679414, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
 --- !u!1 &3716287679019874487
 GameObject:
   m_ObjectHideFlags: 0
@@ -19,7 +11,7 @@ GameObject:
   - component: {fileID: 3716287679019874482}
   - component: {fileID: 3716287679019874481}
   - component: {fileID: 3716287679019874486}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: LeggingsPickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,6 +61,14 @@ MonoBehaviour:
   radius: 1.5
   interactionTransform: {fileID: 3716287679019874482}
   item: {fileID: 11400000, guid: 75d6547186ccf8340a1b100132e855ba, type: 2}
+--- !u!33 &3716287678089345703
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889092612817632448}
+  m_Mesh: {fileID: 1301731239863679414, guid: 68b4cd2cdfe8a024482dd3e367ad51cf, type: 3}
 --- !u!1001 &3716287677727282820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 6839076789424204356, guid: 8a271e721de1f9b4ca4f449ad75167d4,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8031766960174234263, guid: 8a271e721de1f9b4ca4f449ad75167d4,
         type: 3}

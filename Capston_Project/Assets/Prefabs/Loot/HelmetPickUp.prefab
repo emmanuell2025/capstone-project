@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3736456438691563145}
   - component: {fileID: 3736456438691563140}
   - component: {fileID: 3736456438691563141}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: HelmetPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 4340111197992053235, guid: 6e5db89cfbf07934995e340515c2b6b6,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4340111197992220051, guid: 6e5db89cfbf07934995e340515c2b6b6,
         type: 3}
