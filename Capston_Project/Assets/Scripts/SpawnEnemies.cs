@@ -18,6 +18,8 @@ public class SpawnEnemies : MonoBehaviour
     private int enemyCount = 0;
     private int enemyCount2 = 0;
     public int spawnAmount = 100;
+    public GameObject player;
+    public float spawnDistance;
 
     //public GameObject dungeon = GameObject.Find("DungeonGenerator");
 
@@ -31,12 +33,12 @@ public class SpawnEnemies : MonoBehaviour
          This needs to be changed at some point.
     */
 
-    int xMinimum = 0;
-    int xMaximum = 200;
-    int yMinimum = 0;
-    int yMaximum = 2;
-    int zMinimum = 0;
-    int zMaximum = 200;
+    //int xMinimum = 0;
+    //int xMaximum = 200;
+    //int yMinimum = 0;
+    //int yMaximum = 2;
+    //int zMinimum = 0;
+    //int zMaximum = 200;
 
     public bool spawnedCheck = false;
 
@@ -48,30 +50,38 @@ public class SpawnEnemies : MonoBehaviour
     }
     void Update()
     {
-      if (spawnedCheck == false){
-        StartCoroutine(EnemyDrop());
-        spawnedCheck = true;
-      }
-      piggeh = GameObject.FindGameObjectsWithTag("Enemy");
-      slime = GameObject.FindGameObjectsWithTag("Slime");
-      big = GameObject.FindGameObjectsWithTag("Big");
-      enemyCount2 = piggeh.Length;
-      enemyCount2 += slime.Length;
-      enemyCount2 += big.Length;
-      if (spawnedCheck == true){
-        Debug.Log("Enemies Spawned");
-        if (enemyCount2 == 0){
-          Debug.Log("Enemies 0");
-          if (bossSpawn == false){
-            Instantiate(theBoss);
-            Debug.Log("Spawning Boss");
-            bossSpawn = true;
-          }
-          // if(theBoss == null){
-          //   Debug.Log("Boss Spawn");
-          // }
+        if (spawnedCheck == false)
+        {
+            StartCoroutine(EnemyDrop());
+            spawnedCheck = true;
         }
-      }
+        piggeh = GameObject.FindGameObjectsWithTag("Enemy");
+        slime = GameObject.FindGameObjectsWithTag("Slime");
+        big = GameObject.FindGameObjectsWithTag("Big");
+        enemyCount2 = piggeh.Length;
+        enemyCount2 += slime.Length;
+        enemyCount2 += big.Length;
+        if (spawnedCheck == true)
+        {
+            Debug.Log("Enemies Spawned");
+            if (enemyCount2 == 0)
+            {
+                Debug.Log("Enemies 0");
+                if (bossSpawn == false)
+                {
+                    Vector3 playerPos = player.transform.position;
+                    Vector3 playerDirection = player.transform.forward;
+                    Quaternion playerRotation = player.transform.rotation;
+                    Vector3 spawnPos = playerPos + playerDirection * spawnDistance;
+                    Instantiate(theBoss, spawnPos, Quaternion.identity);
+                    Debug.Log("Spawning Boss");
+                    bossSpawn = true;
+                }
+                // if(theBoss == null){
+                //   Debug.Log("Boss Spawn");
+                // }
+            }
+        }
     }
 
     IEnumerator EnemyDrop()
@@ -87,12 +97,13 @@ public class SpawnEnemies : MonoBehaviour
             zPosition = Random.Range(zMinimum, zMaximum);
             */
             Vector3 aPoint = GetRandomLocation();
-            Instantiate(enemy[i], new Vector3(aPoint.x,aPoint.y, aPoint.z), Quaternion.identity);    //xPosition, yPosition, zPosition), Quaternion.identity
+            Instantiate(enemy[i], new Vector3(aPoint.x, aPoint.y, aPoint.z), Quaternion.identity);    //xPosition, yPosition, zPosition), Quaternion.identity
             yield return new WaitForSeconds(0.1f);
             enemyCount += 1;
         }
-        if (enemyCount < 1){
-          Debug.Log("This should spawn Boss");
+        if (enemyCount < 1)
+        {
+            Debug.Log("This should spawn Boss");
         }
         // enemyCount += 1;
     }
