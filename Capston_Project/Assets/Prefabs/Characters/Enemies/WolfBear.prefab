@@ -708,8 +708,8 @@ MonoBehaviour:
     baseValue: 0
   attackSpeed:
     baseValue: 0
-  painSound: {fileID: 0}
-  headSource: {fileID: 0}
+  painSound: {fileID: 8300000, guid: b5f75a9d28d7ad297a68f9816df964bd, type: 3}
+  headSource: {fileID: 746815299670846301}
 --- !u!114 &6130907067769531843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
     type: 3}
   defaultAttackAnimSet:
   - {fileID: -4405619503343681686, guid: e9d4a635e11fb5a4da6408fc4b4851ec, type: 3}
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 9fc96ab995c0fe00a821b111641cbbeb, type: 3}
   overrideController: {fileID: 22100000, guid: 3b9eb4eb585d615408d0f66b8336030a, type: 2}
 --- !u!65 &6130907067769531869
 BoxCollider:
@@ -1246,15 +1246,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c8dd0bd67bd96c8aac6fe200b63f14, type: 3}
---- !u!4 &6766610331408120609 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
-    type: 3}
-  m_PrefabInstance: {fileID: 7027528579315888183}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &6766610331408120608 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4350785364115770135, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
+    type: 3}
+  m_PrefabInstance: {fileID: 7027528579315888183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6766610331408120609 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
     type: 3}
   m_PrefabInstance: {fileID: 7027528579315888183}
   m_PrefabAsset: {fileID: 0}

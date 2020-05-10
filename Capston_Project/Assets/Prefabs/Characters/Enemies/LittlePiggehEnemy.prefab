@@ -633,8 +633,8 @@ MonoBehaviour:
     baseValue: 0
   attackSpeed:
     baseValue: 0
-  painSound: {fileID: 0}
-  headSource: {fileID: 0}
+  painSound: {fileID: 8300000, guid: 2a34bbaab1fe8f80b88cdad268bba388, type: 3}
+  headSource: {fileID: 2024205882983716487}
 --- !u!114 &5596370784671514846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
     type: 3}
   defaultAttackAnimSet:
   - {fileID: 4723146814002874508, guid: cbdc1665fcc798d428165feb5d13017c, type: 3}
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: b29965d20792fd0899a06f435a89f456, type: 3}
   overrideController: {fileID: 22100000, guid: d1764209b7504d64c8f26aea033867c6, type: 2}
 --- !u!1 &5828646861434150042
 GameObject:
