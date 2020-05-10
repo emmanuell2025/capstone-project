@@ -250,7 +250,7 @@ MonoBehaviour:
   maxHealth: 40
   maxMana: 100
   damage:
-    baseValue: 10
+    baseValue: 3
   armor:
     baseValue: 3
   attackCooldown:

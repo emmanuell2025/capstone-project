@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 5500798616981468352}
   - component: {fileID: 5500798616981468358}
   - component: {fileID: 5500798616981468359}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: RustyShieldPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 7219453945989330079, guid: bbc40ef3e27f4ef46be1a49aa2615567,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 137146641678206938, guid: bbc40ef3e27f4ef46be1a49aa2615567, type: 3}

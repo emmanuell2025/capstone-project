@@ -23,8 +23,8 @@ public class PlayerHealthBar : MonoBehaviour
 
     void OnHealthChanged(int maxHealth, int currentHealth)
     {
-        float healthPercent = (float)currentHealth / maxHealth;
         healthBar.value = currentHealth;
+        
     }
 
      

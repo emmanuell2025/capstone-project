@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1630872099182511134}
   - component: {fileID: 1630872099182511133}
   - component: {fileID: 1630872099182511130}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: LeatherPantsPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ PrefabInstance:
     - target: {fileID: 1425077582512308538, guid: 42cc478559310df45a900c0b30fa19cb,
         type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1425077582525910090, guid: 42cc478559310df45a900c0b30fa19cb, type: 3}
