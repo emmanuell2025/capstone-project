@@ -40,7 +40,7 @@ public class OptionsMenu : MonoBehaviour
 
 
     public void SetVolume (float volume){
-      audioMixer.SetFloat("MyExposedParam", volume);
+      audioMixer.SetFloat("Volume", volume);
     }
 
 

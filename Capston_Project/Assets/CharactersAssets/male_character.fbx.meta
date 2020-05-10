@@ -64,40 +64,36 @@ ModelImporter:
       that will be discarded.\n\nClip 'Armature|Punch_Attack' has import animation
       warnings that might lower retargeting quality:\n\t'Chest' is inbetween humanoid
       transforms and has rotation animation that will be discarded.\n"
-    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Idle':\n\tLeftUpperArm
-      average position error 1.7 mm and maximum position error 101.4 mm at time 0:
-      0 (0.0%) Frame 0\n\tLeftLowerArm average position error 1.7 mm and maximum
-      position error 101.4 mm at time 0: 0 (0.0%) Frame 0\n\tLeftHand average position
-      error 1.7 mm and maximum position error 101.5 mm at time 0: 0 (0.0%) Frame
-      0\n\nRetargeting quality report for clip 'Combat_Idle':\n\tRetargeting quality
-      is good. No significant differences with original animation were found.\n\nRetargeting
-      quality report for clip 'Punch_Attack':\n\tRetargeting quality is good. No
-      significant differences with original animation were found.\n\nRetargeting
-      quality report for clip 'Right Grip':\n\tRetargeting quality is good. No significant
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Idle':\n\tRetargeting
+      quality is good. No significant differences with original animation were found.\n\nRetargeting
+      quality report for clip 'Combat_Idle':\n\tRetargeting quality is good. No significant
       differences with original animation were found.\n\nRetargeting quality report
-      for clip 'Sword_Attack':\n\tLeftFoot average position error 1.8 mm and maximum
-      position error 1.8 mm at time 0:14 (23.3%) Frame 14\n\tRightFoot average position
-      error 1.8 mm and maximum position error 1.8 mm at time 0: 1 (1.7%) Frame 1\n\nRetargeting
-      quality report for clip 'Walking':\n\tRetargeting quality is good. No significant
-      differences with original animation were found.\n\nRetargeting quality report
-      for clip 'Armature|Combat_Idle':\n\tLeftFoot average position error 1.8 mm
-      and maximum position error 1.8 mm at time 0:33 (54.1%) Frame 33\n\tRightFoot
-      average position error 1.8 mm and maximum position error 1.8 mm at time 1:
-      0 (98.4%) Frame 60\n\nRetargeting quality report for clip 'Armature|Idle':\n\tLeftFoot
-      average position error 2.0 mm and maximum position error 2.0 mm at time 0:
-      0 (0.0%) Frame 0\n\tRightFoot average position error 2.0 mm and maximum position
-      error 2.0 mm at time 0:15 (25.0%) Frame 15\n\nRetargeting quality report for
-      clip 'Armature|Punch_Attack':\n\tLeftFoot average position error 1.8 mm and
-      maximum position error 1.8 mm at time 0:40 (65.6%) Frame 40\n\tRightFoot average
-      position error 1.8 mm and maximum position error 1.8 mm at time 0:40 (65.6%)
-      Frame 40\n\nRetargeting quality report for clip 'Armature|Right Grip':\n\tLeftFoot
-      average position error 2.0 mm and maximum position error 2.0 mm at time 0:
-      0 (0.0%) Frame 0\n\tRightFoot average position error 1.8 mm and maximum position
-      error 1.8 mm at time 0: 0 (0.0%) Frame 0\n\nRetargeting quality report for
-      clip 'Armature|Sword_Attack':\n\tLeftFoot average position error 1.8 mm and
-      maximum position error 1.8 mm at time 0:14 (23.3%) Frame 14\n\tRightFoot average
-      position error 1.8 mm and maximum position error 1.8 mm at time 0: 1 (1.7%)
-      Frame 1\n\nRetargeting quality report for clip 'Armature|Walking':\n\tLeftFoot
+      for clip 'Punch_Attack':\n\tRetargeting quality is good. No significant differences
+      with original animation were found.\n\nRetargeting quality report for clip
+      'Right Grip':\n\tRetargeting quality is good. No significant differences with
+      original animation were found.\n\nRetargeting quality report for clip 'Sword_Attack':\n\tLeftFoot
+      average position error 1.8 mm and maximum position error 1.8 mm at time 0:14
+      (23.3%) Frame 14\n\tRightFoot average position error 1.8 mm and maximum position
+      error 1.8 mm at time 0: 1 (1.7%) Frame 1\n\nRetargeting quality report for
+      clip 'Walking':\n\tRetargeting quality is good. No significant differences
+      with original animation were found.\n\nRetargeting quality report for clip
+      'Armature|Combat_Idle':\n\tLeftFoot average position error 1.8 mm and maximum
+      position error 1.8 mm at time 0:33 (54.1%) Frame 33\n\tRightFoot average position
+      error 1.8 mm and maximum position error 1.8 mm at time 1: 0 (98.4%) Frame 60\n\nRetargeting
+      quality report for clip 'Armature|Idle':\n\tLeftFoot average position error
+      2.0 mm and maximum position error 2.0 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot
+      average position error 2.0 mm and maximum position error 2.0 mm at time 0:15
+      (25.0%) Frame 15\n\nRetargeting quality report for clip 'Armature|Punch_Attack':\n\tLeftFoot
+      average position error 1.8 mm and maximum position error 1.8 mm at time 0:40
+      (65.6%) Frame 40\n\tRightFoot average position error 1.8 mm and maximum position
+      error 1.8 mm at time 0:40 (65.6%) Frame 40\n\nRetargeting quality report for
+      clip 'Armature|Right Grip':\n\tLeftFoot average position error 2.0 mm and maximum
+      position error 2.0 mm at time 0: 0 (0.0%) Frame 0\n\tRightFoot average position
+      error 1.8 mm and maximum position error 1.8 mm at time 0: 0 (0.0%) Frame 0\n\nRetargeting
+      quality report for clip 'Armature|Sword_Attack':\n\tLeftFoot average position
+      error 1.8 mm and maximum position error 1.8 mm at time 0:14 (23.3%) Frame 14\n\tRightFoot
+      average position error 1.8 mm and maximum position error 1.8 mm at time 0:
+      1 (1.7%) Frame 1\n\nRetargeting quality report for clip 'Armature|Walking':\n\tLeftFoot
       average position error 1.8 mm and maximum position error 2.0 mm at time 0:
       0 (0.0%) Frame 0\n\tRightFoot average position error 1.8 mm and maximum position
       error 2.0 mm at time 0:30 (50.0%) Frame 30\n"
@@ -638,7 +634,7 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
