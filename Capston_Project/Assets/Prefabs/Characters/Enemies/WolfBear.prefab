@@ -701,7 +701,7 @@ MonoBehaviour:
   maxHealth: 40
   maxMana: 100
   damage:
-    baseValue: 10
+    baseValue: 15
   armor:
     baseValue: 3
   attackCooldown:
@@ -1246,15 +1246,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c8dd0bd67bd96c8aac6fe200b63f14, type: 3}
---- !u!82 &6766610331408120608 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4350785364115770135, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
-    type: 3}
-  m_PrefabInstance: {fileID: 7027528579315888183}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6766610331408120609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4350785364115770134, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
+    type: 3}
+  m_PrefabInstance: {fileID: 7027528579315888183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6766610331408120608 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4350785364115770135, guid: b9c8dd0bd67bd96c8aac6fe200b63f14,
     type: 3}
   m_PrefabInstance: {fileID: 7027528579315888183}
   m_PrefabAsset: {fileID: 0}
