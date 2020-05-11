@@ -7,12 +7,10 @@ using UnityEngine.UI;
 public class PlayerHealthBar : MonoBehaviour
 {
     public Slider healthBar;
-    CharacterStats playerHealth;
     
 
      void Start()
     {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStats>();
         healthBar.wholeNumbers = true;
     }
     private void Update()
